@@ -1,0 +1,88 @@
+.IdeaTree {
+	white-space: nowrap;
+}
+
+
+.IdeaTree img {
+	border: 0px;
+	vertical-align: middle;
+}
+
+.IdeaTree a {
+	color: #333;
+	text-decoration: none;
+}
+
+.IdeaTree a.node, .IdeaTree a.nodeSel {
+	white-space: nowrap;
+	padding: 1px 2px 1px 2px;
+}
+
+.IdeaTree a.node:hover {
+	color: #333;
+}
+
+.IdeaTree a.nodeSel {
+	background-color: #000066;
+	color: #FFFFFF;
+}
+
+.IdeaTeamTree {
+	white-space: nowrap;
+}
+
+.IdeaTeamTree img {
+	border: 0px;
+	vertical-align: middle;
+}
+
+.IdeaTeamTree a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.IdeaTeamTree a.node {
+	white-space: nowrap;
+	padding: 1px 2px 1px 2px;
+}
+
+.IdeaTeamTree a.nodeSel {
+	background-color: #FF9900;
+	white-space: nowrap;
+	padding: 1px 2px 1px 2px;
+}
+
+.IdeaTeamTree a.node:hover {
+	background-color: #FF9900;
+	color: #FFFFFF;
+}
+
+.IDEALIVE {
+	white-space: nowrap;
+}
+
+
+.IDEALIVE img {
+	border: 0px;
+	vertical-align: middle;
+}
+
+.IDEALIVE a {
+	color: #000000;
+	text-decoration: none;
+}
+
+.IDEALIVE a.node, .IdeaTree a.nodeSel {
+	white-space: nowrap;
+	padding: 1px 2px 1px 2px;
+}
+
+.IDEALIVE a.node:hover {
+	color: #FFFFFF;
+	background-color: #328CB9;
+}
+
+.IDEALIVE a.nodeSel {
+	color: #FFFFFF;
+	background-color: #328CB9;
+}

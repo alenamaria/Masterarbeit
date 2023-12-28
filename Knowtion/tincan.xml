@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<tincan xmlns="http://projecttincan.com/tincan.xsd">
+    <activities>
+        <activity id="https://www.ideateam.de/server/courses/14cb132cfb264466ac4749493e6f1357" type="http://adlnet.gov/expapi/activities/course">
+            <name>ELearning__Modul_1</name>
+            <description lang="en-US">Standard Kurs</description>
+            <launch lang="en-us">index.html</launch>
+        </activity>
+    </activities>
+</tincan>

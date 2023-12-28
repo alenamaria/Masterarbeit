@@ -1,0 +1,185 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1" />
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+		<title>E-Learning - Modul 1</title>
+		<style type="text/css" id="deletemeifie9">
+			*{
+				box-sizing: border-box;
+				-ms-box-sizing: border-box;
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+			}
+		</style>
+		<style type="text/css">
+			body{
+				overflow: auto;
+				padding: 0px;
+				margin: 0px;
+			}
+		</style>
+		<style type="text/css">
+			#sm2-container {
+				display: none;
+			  /* Initial state: position:absolute/off-screen, or left/top:0 */
+			}
+			#sm2-container.swf_timedout {
+			  /* Didn't load before time-out, show to user.
+			  Maybe highlight on-screen, red border, etc..? */
+				display: block;
+				position: absolute;
+				width: 250px;
+				height: 200px;
+			}
+			#sm2-container.swf_unblocked {
+			  display: none;
+			  /* Applied if movie loads successfully after
+			  an unblock (flash started, so move off-screen etc.) */
+			}
+			#sm2-container.swf_loaded {
+			  /* Applied if movie loads, regardless of whether
+			  it was initially blocked */
+			}
+			#sm2-container.swf_error {
+			  /* "Fatal" error case: SWF loaded,
+			  but SM2 was unable to start for some reason.
+			  (Flash security or other error case.) */
+			}
+			#sm2-container.high_performance {
+			  /* Additional modifier for "high performance" mode
+			  should apply position:fixed and left/bottom 0 to stay on-screen
+			  at all times (better flash performance) */
+			}
+			#sm2-container.flash_debug {
+			  /* Additional modifier for flash debug output mode
+			  should use width/height 100% so you can read debug messages */
+			}
+		</style>
+		<link rel="shortcut icon" href="script/img/favicon.ico" type="image/x-icon">
+		<link rel="StyleSheet" href="script/ideatree.css" type="text/css"/>
+		<link rel="StyleSheet" href="script/content.css" type="text/css"/>
+		<link rel="StyleSheet" href="script/mCScrollbar.css" type="text/css"/>
+		<script type="text/javascript" src="script/statemanager.js"></script>
+		<script type="text/javascript">
+			var StateManager = EXANIMO.managers.StateManager;
+			url_libs="";
+			window.onload=function(){StateManager.initialize();};
+		</script>
+		<script type="text/javascript">
+			url_libs="";
+			window["IDEACUID"]='14cb132cfb264466ac4749493e6f1357';
+		</script>
+		<script type="text/javascript" src="script/jquery/jquery.js"></script>
+		<script type="text/javascript" src="script/swfobjects/swfobject.js"></script>
+		<script type="text/javascript" src="script/soundmanager2.js"></script>	<script type="text/javascript">
+			allowTransCoverPanel=false;
+			var startTimeout = '2000';// wenn man wünscht kann man den Start Bild länger stehen lassen, hier ist es in millisekunden also 1000 heißt 1 sekunde
+			if( startTimeout == '##' + 'start_timeout' + '##' ){startTimeout = 0;}
+			/*var flashRequired = '0';
+			if(flashRequired == '##' + 'flash_required' + '##'){
+				flashRequired == 1;
+			}
+			if(flashRequired==1){
+				flashRequired = true;
+			}else{
+				flashRequired = false;
+			}*/
+			var flashRequired = false;
+			startTimeout = parseInt(startTimeout, 10);
+			var audio = new Object();
+			audio.error = false;
+			audio.load = false;
+			audio.currentSound = "";
+			audio.volume = 100;
+			audio.loop = false;
+			audio.cwp = false;
+			soundManager.nullURL = "script/null.mp3";
+			soundManager.onload = function(){startRuntime();};
+			soundManager.onerror = function(){/*audio.error = true;*/if(jQuery("#sm2-container").hasClass("swf_error")){startRuntime();}};
+			soundManager.setup({
+				/*onready : function(){startRuntime();},*/
+				useFlashBlock : true,
+				preferFlash: flashRequired,
+				waitForWindowLoad : false,
+				debugMode : false,
+				consoleOnly : false,
+				flashVersion: 9,
+				//url : url_libs+"script/soundmanager2.swf"
+				url : url_libs+"script/"
+			});
+		</script>
+		<script type="text/javascript" src="script/datainterface/it_diIT2L.js"></script>
+		<script type="text/javascript" src="script/datainterface/it_datainterface.js"></script>
+		<script type="text/javascript" src="script/datainterface/it_diScorm.js"></script>
+		<script type="text/javascript" src="script/apiwrapper.js"></script>
+		<script type="text/javascript" src="script/tincan.js"></script>
+		<script type="text/javascript" src="script/lrswrapper.js"></script>
+		<script type="text/javascript" src="script/Chart.min.js"></script>
+		<script type="text/javascript" src="script/jquery/jquery.ui.js"></script>
+		<script type="text/javascript" src="script/jquery/jquery.ui.touch-punch.min.js"></script>
+		<script type="text/javascript" src="script/treeext/jquery.jstree.js"></script>
+		<script type="text/javascript" src="script/jquery/jquery.mCustomScrollbar.min.js"></script>
+		<script type="text/javascript" src="script/jquery/jquery.mousewheel.min.js"></script>
+		<script type="text/javascript" src="script/jquery/jquery.tabledit.js"></script>     
+		<script type="text/javascript" src="script/fabric/fabric.js"></script>
+		<script type="text/javascript" src="script/ResizeSensor.js"></script>
+		<script type="text/javascript" src="script/ElementQueries.js"></script>
+		<script type="text/javascript" src="script/script.js"></script>
+		<script type="text/javascript">
+			var use_syslib=true;
+			var bClosed=false;
+			var coverColor="#FFFFFF";
+			var StartXMLName="iproject.xml";
+			var LowerCaseFileName="0";
+			var CachMode="0";
+			var pathsyslib="script/etc/sys.xml";
+			var soapNS="ideawebIntf";
+			var ideaendmessage="<Font color=\"#000000\" face=\"Arial,Helvetica,SansSerif\" Size=\"+1\">Der Kurs ist nun zu Ende – wir hoffen, Sie haben viel mitnehmen k&ouml;nnen.<br>Sie k&ouml;nnen dieses Browser-Tab schließen.";
+			function doFinish(){
+				if(!bClosed){
+					if(window['IDEAMAPI']!=null && window['IDEAMAPI'].CloseProgram!=null){
+						window['IDEAMAPI'].CloseProgram();
+					}else{
+						checkExitAU();
+						//doLMSFinish("");
+						CloseProgram();
+					}
+					bClosed=true;
+				}
+			}
+		</script>
+	</head>
+		<body style="margin: 0px; padding: 0px; background-color: #ffffff;" onselectstart="if(isDragging)return false" onunload="doFinish();" onbeforeunload="doFinish();">
+		<script type="text/javascript" src="script/wz_tooltip.js"></script>
+		<div id="AudioPlayerMovieContainer" style="padding: 0px; overflow: hidden; position: absolute; background-color: rgb(235, 235, 235); height: 1px; left: 0px; top: 0px;width: 1px; cursor: default; font-family: Verdana,Arial,sans-serif; color: rgb(0, 0, 0); font-size: 14px; font-weight: normal; font-style: normal;"></div>
+		<div id="splashscreen"  style="height: 100%; position: absolute; width: 100%;">
+			<table align="center" style="padding:30px;width:100%;max-width:540px;" height="100%" border="0" cellpadding="0" cellspacing="0">
+				<tr>
+					<td  valign="center">
+						<!--<span style='font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: 300;font-size: 16px; color:#072361'>EINEN MOMENT NOCH<br></span>-->
+						<span style='font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: 800; font-size: 24px;color:#072361'>loading...</span>
+						<br>
+						<br>
+						<p align="center">
+						<img style="width:100%;max-width:500px" src="script/img/ladescreen_knowtion.gif"/>
+					<br>
+					<br>
+							<br><br>
+							<br><br>
+					<img src="script/img/knowtion-logo.svg" style="width:200px"></td>
+				</tr>
+			</table>
+		</div>
+		<noscript>
+			<table style="width:100%;height:100%;"><tr><td align="center" valign="center">
+			<div style="position:absolute;background-color:#ffffff;width:100%;height:100%;top:0px;left:0px;">
+				<div style="color:#ffffff;border-color:#808080;border-style:solid;border-width:1px;background-color:#ffffff;padding:0px;width:400px;font-family:Verdana,Arial,sans-serif;height:200px;FONT-SIZE:13px; overflow:hidden;">
+				<table style="width:100%;height:100%;"><tr><td align="center" valign="center">
+					<div style="color:#000000;">In Ihrem Browser ist der Einsatz von JavaScript deaktiviert.<br/>
+					Bitte aktivieren Sie JavaScript für die Ausführung der knowtion Anwendung.</div>
+			</td></tr></table></div></div></td></tr></table>
+		</noscript>
+	</body>
+</html>

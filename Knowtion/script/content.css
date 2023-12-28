@@ -1,0 +1,252 @@
+html, body{
+	height:100%;	
+}
+
+/*
+* {
+  line-height: 1.2em;
+}
+*/
+
+.IDEA{
+	font-size: 12px;
+	font-color: #000000;
+	font-face: 'verdana';
+	text-decoration: none;
+}
+._cfwStyle{
+	overflow: visible !important;
+}
+textarea{
+	resize: none;
+}
+
+.icHTMLText, .icLabel {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	color: #000000;
+}
+
+ul.icMenuTree {
+  list-style: none;
+  overflow: auto !important;
+}
+
+ul.icMenuTree li a {
+  padding: 1px 4px;
+}
+
+ul.icMenuTree li a span{
+  text-decoration: none;
+  color: #000000;
+  display: inline-block;
+  width: auto;
+  max-width: 205px;
+  white-space: normal;
+  vertical-align: top;
+  padding-left: 5px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+ul.icMenuTree ul{
+  list-style: none;
+  padding-left: 20px;
+}
+
+ul.icGlossarList {
+  margin: 0;
+  overflow: auto !important;
+}
+
+ul.icGlossarList li {
+  padding: 2px;
+}
+
+ul.icGlossarList li a {
+  text-decoration: none;
+  color: #000000;
+}
+
+ul.icGlossarList li:nth-child(2n) {
+  background-color: #eeeeee !important;
+}
+
+ul.icGlossarList li.selectedelement {
+  background-color: #D5EDF6 !important;
+}
+
+.apSlider.default {
+  border-radius: 0;
+  overflow: visible !important;
+}
+
+.apSlider.default .ui-slider-handle {
+  display: inherit;
+  position: absolute;
+  background: url(slider.png) no-repeat center 3px;
+  background-size: 40px 20px;
+  margin-bottom: 0px;
+  margin-left: -20px;
+  left: 0;
+  height: 22px;
+  width: 40px;
+  border: 0;
+}
+
+.SliderPanel{
+	background-color: #f5f5f5;
+	border-top: 1px solid #bebebe;
+  border-bottom: 1px solid #bebebe;
+}
+
+.Slider{
+  background-color: #f5f5f5;
+	border-left: 1px solid #bebebe;
+  border-right: 1px solid #bebebe;
+  border-top: 0;
+  border-bottom: 0;
+}
+
+/*
+.SliderWay{
+	background-color: #bebebe;
+} */
+
+.defaultCSSbutton{
+	border-style: solid;
+	border-color: #000000;
+	border-width: 1px;
+	color: #000000;
+	background-color: #FFFFFF;
+
+/*	border-radius: 5px;
+	-o-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;*/
+}
+.defaultCSSbuttonHover{
+	border-color: #666666;
+	background-color: #AAAAAA;
+}
+.defaultCSSbuttonPressed{
+	color: #AAAAAA;
+	background-color: #444444;
+}
+.defaultCSSbuttonDisabled{
+	color: #999999;
+	background-color: #FFFFFF;
+	border-color: #CCCCCC;
+}
+
+.mScrollable{
+	-webkit-overflow-scrolling: touch;
+}
+
+.mobile-menue-side-button{
+	position: fixed;
+	left: 0px;
+	top: 45%;
+	width: 1%;
+	height: 25px;
+	border-radius: 0.0em 0.6em 0.6em 0.0em;
+	border-width:1px;
+	border-style:solid;
+	border-color: rgb(51,51,51);
+	padding: 0.2em;
+	background-image: linear-gradient(right , rgb(85,85,85) 5%, rgb(51,51,51) 53%, rgb(51,51,51) 100%);
+	background-image: -o-linear-gradient(right , rgb(85,85,85) 5%, rgb(51,51,51) 53%, rgb(51,51,51) 100%);
+	background-image: -moz-linear-gradient(right , rgb(85,85,85) 5%, rgb(51,51,51) 53%, rgb(51,51,51) 100%);
+	background-image: -webkit-linear-gradient(right , rgb(85,85,85) 5%, rgb(51,51,51) 53%, rgb(51,51,51) 100%);
+	background-image: -ms-linear-gradient(right , rgb(85,85,85) 5%, rgb(51,51,51) 53%, rgb(51,51,51) 100%);
+	background-image: -webkit-gradient(
+		linear,
+		right top,
+		left top,
+		color-stop(0.05, rgb(85,85,85)),
+		color-stop(0.53, rgb(51,51,51)),
+		color-stop(0.77, rgb(51,51,51))
+	);
+}
+
+.slider-containing-element  .ui-slider-switch { width: 100% }
+
+#IdeaRTPopupMobile{
+    position: relative;
+    width : 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    z-index:9999999;
+    max-width: 480px;
+}
+
+#IdeaRTPopupMobileCont{
+    marginTop: -1.2em;
+    position: absolute;
+    width: 100%;
+}
+
+#IdeaRTPopupMobileOverlay{
+    opacity:0.4;
+    height:100%;
+}
+
+.navilistcontent-image{
+    width:16px;
+    height:16px;
+}
+
+.it_vpbackground {
+    background: url('img/play.png');
+    background-position: center;
+    background-repeat: no-repeat;
+	background-size:contain;
+}
+
+.it_shapebackground {
+    background: url('img/shape.png');
+    background-position: center;
+    background-repeat: no-repeat;
+	background-size:contain;
+}
+
+.it_imagebackground {
+    background-image: url('img/image.png')!important;
+    background-position: center!important;
+    background-repeat: no-repeat!important;
+	background-size:contain;
+	/*min-height:100px;*/
+}
+
+.it_framestyle0a {
+    border-style: none;
+}
+
+.it_framestyle7a {
+    border-style: dotted!important;
+    border-width: 1px!important;
+    border-color: #000000!important;
+}
+
+.it_basebgcolor4 {
+    background-color: #ffffff !important;
+}
+
+.it_padding1{
+	padding-bottom: 10px!important;
+	padding-top: 10px!important;
+	padding-left: 15px!important;
+	padding-right: 15px!important;
+}
+
+.it_padding3{
+	padding: 10px!important;
+}
+
+.it_picture{
+	min-height:100px;
+	min-Width:100px;
+}
+

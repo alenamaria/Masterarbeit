@@ -1,0 +1,90 @@
+<div id="SrchDlgModalFrame">
+	<div id="SrchDlgFrame"> <!-- der komplette Container -->
+		<div id="Content_SrchDlgFrame"> <!-- oberer Inhaltsbereich -->
+			<% if(showPageSelector) { %>
+			<div id="Left_SrchDlgFrame"> <!-- linke Seitenhälfte -->
+				<div id="PgSelector_SrchDlgFrame"> <!-- oben für Seitenwahlfenster -->
+					<div id="TabArea_SrchDlgFrame">
+						<ul>
+							<li><a href="#PrjTree_SrchDlgFrame"><%= ProjectTree %></a></li>
+							<li><a href="#LocTempTree_SrchDlgFrame"><%= LocalTemplateTree %></a></li>
+						</ul>
+						
+						<div id="PrjTree_SrchDlgFrame">
+						</div>
+						<div id="LocTempTree_SrchDlgFrame">
+						</div>
+					</div>
+				</div>
+				<div id="SrchScope_SrchDlgFrame"> <!-- unten für die Optionen dadrunter -->
+					<div id="SrchScopeSubdiv_SrchDlgFrame">
+						<div class="SrchDlgHeader">
+							<%= SrchScope %>
+						</div>
+						<div class="SrchDlgInput">
+							<input type="radio" id="ScopeRadio_SrchDlg1" name="ScopeRadio_SrchDlg" value="1" checked="checked"/><%= ScopeEverywhere %>
+							<input type="radio" id="ScopeRadio_SrchDlg2" name="ScopeRadio_SrchDlg" value="2"/><%= ScopeSelected %>
+						</div>
+					</div>
+				</div>
+			</div>
+			<% } %>
+			<div id="Right_SrchDlgFrame"> <!-- rechte Seitenhälfte -->
+				<div id="Keywrd_SrchDlgFrame">
+					<div class="SrchDlgHeader">
+						<%= SearchHeader %>
+					</div>
+					<div class="SrchDlgInputHeader">
+						<%= SearchKeyword %>
+					</div>
+					<div class="SrchDlgInput">
+						<input type="text" id="Keyword_SrchDlg" name="Keyword_SrchDlg"/>
+					</div>
+				</div>
+				<div id="Loc_SrchDlgFrame">
+					<div class="SrchDlgHeader">
+						<%= SearchInHeader %>
+					</div>
+					<div class="SrchDlgInputHeader">
+						<%= SearchInInputHeader %>
+					</div>
+					<div class="SrchDlgInput">
+						<input type="text" id="Attrib_SrchDlg" name="Attrib_SrchDlg"/>
+					</div>
+				</div>
+				<div id="IDEACl_SrchDlgFrame">
+					<div class="SrchDlgHeader">
+						<%= LimitSearch %>
+					</div>
+					<div class="SrchDlgInputHeader">
+						<%= IdeaClassname %>
+					</div>
+					<div class="SrchDlgInput">
+						<input type="text" id="Limit_SrchDlg" name="Limit_SrchDlg"/>
+					</div>
+				</div>
+				<div id="opt_SrchDlgFrame">
+					<input type="checkbox" name="ReturnValues_SrchDlg" id="ReturnValues_SrchDlg" value="ReturnValues"><%= ReturnValuesText %></input><br/>
+					<input type="checkbox" name="IncludeTempl_SrchDlg" id="IncludeTempl_SrchDlg" value="IncludeTemplate"><%= IncludeTemplateText %></input><br/>
+					<input type="checkbox" name="CaseSensitive_SrchDlg" id="CaseSensitive_SrchDlg" value="CaseSensitive"><%= CaseSensitiveText %></input>
+				</div>
+				<div id="lang_SrchDlgFrame">
+					<div class="SrchDlgHeader">
+						<%= SelectLanguageText %>
+					</div>
+					<div class="SrchDlgInput">
+						<select name="language" id="Language_SrchDlg" size="1">
+							<% for(var i=0; i<languages.length; i++) { %>
+								<option value="<%= languages[i].optValue %>"><%=languages[i].name %></option>
+							<% } %>
+						</select>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="Btn_SrchDlgFrame"> <!-- unterer Bereich für die Buttons -->
+			<div id="SrchDlgBtn_Search" class="IdeaComponent button"><%= BtnSearchText %></div>
+			<div id="SrchDlgBtn_Cancel" class="IdeaComponent button"><%= BtnCancelText %></div>
+		</div>
+	</div>
+</div>
