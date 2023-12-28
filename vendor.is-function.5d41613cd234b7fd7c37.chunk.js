@@ -1,0 +1,1 @@
+(self.webpackChunk_imc_blish_stage_zero=self.webpackChunk_imc_blish_stage_zero||[]).push([[280],{3717:e=>{e.exports=function(e){if(!e)return!1;var t=o.call(e);return"[object Function]"===t||"function"==typeof e&&"[object RegExp]"!==t||"undefined"!=typeof window&&(e===window.setTimeout||e===window.alert||e===window.confirm||e===window.prompt)};var o=Object.prototype.toString}}]);
