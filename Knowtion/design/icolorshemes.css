@@ -1,0 +1,912 @@
+/* ------------------- Icon - Fonts ---------------------- */
+
+@font-face {
+	font-family: 'Font Awesome 5 Pro';
+	font-style: normal;
+	font-weight: 300;
+	src: url("fonts/fa-light-300.eot");
+	src: url("fonts/fa-light-300.eot?#iefix") format("embedded-opentype"), url("fonts/fa-light-300.woff2") format("woff2"), url("fonts/fa-light-300.woff") format("woff"), url("fonts/fa-light-300.ttf") format("truetype"), url("fonts/fa-light-300.svg#fontawesome") format("svg"); }
+
+.fal {
+	font-family: 'Font Awesome 5 Pro';
+	font-weight: 300; }
+
+@font-face {
+	font-family: 'Font Awesome 5 Pro';
+	font-style: normal;
+	font-weight: 400;
+	src: url("fonts/fa-regular-400.eot");
+	src: url("fonts/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("fonts/fa-regular-400.woff2") format("woff2"), url("fonts/fa-regular-400.woff") format("woff"), url("fonts/fa-regular-400.ttf") format("truetype"), url("fonts/fa-regular-400.svg#fontawesome") format("svg"); }
+
+.far {
+	font-family: 'Font Awesome 5 Pro';
+	font-weight: 400; }
+
+@font-face {
+	font-family: 'Font Awesome 5 Pro';
+	font-style: normal;
+	font-weight: 900;
+	src: url("fonts/fa-solid-900.eot");
+	src: url("fonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("fonts/fa-solid-900.woff2") format("woff2"), url("fonts/fa-solid-900.woff") format("woff"), url("fonts/fa-solid-900.ttf") format("truetype"), url("fonts/fa-solid-900.svg#fontawesome") format("svg"); }
+
+.fa,
+.fas {
+	font-family: 'Font Awesome 5 Pro';
+	font-weight: 900;
+}
+
+@font-face {
+	font-family: 'LatoWeb';
+	src: url('fonts/Lato-Regular.eot'); /* IE9 Compat Modes */
+	src: url('fonts/Lato-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	url('fonts/Lato-Regular.woff2') format('woff2'), /* Modern Browsers */
+	url('fonts/Lato-Regular.woff') format('woff'); /* Modern Browsers */
+	font-style: normal;
+	font-weight: normal;
+	text-rendering: optimizeLegibility;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('fonts/roboto-v29-latin-regular.eot');
+	src: url('fonts/roboto-v29-latin-regular.eot?#iefix') format('embedded-opentype'),
+	url('fonts/roboto-v29-latin-regular.woff2') format('woff2'),
+	url('fonts/roboto-v29-latin-regular.woff') format('woff');
+	font-style: normal;
+	font-weight: normal;
+	text-rendering: optimizeLegibility;
+}
+
+@font-face {
+	font-family: 'RobotoSlab';
+	src: url('fonts/RobotoSlab-Regular-webfont.eot');
+	src: url('fonts/RobotoSlab-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+	url('fonts/RobotoSlab-Regular-webfont.woff') format('woff');
+	font-style: normal;
+	font-weight: normal;
+	text-rendering: optimizeLegibility;
+}
+
+@font-face {
+	font-family: 'SourceSerif';
+	src: url('fonts/source-serif-pro-v11-latin-regular.eot');
+	src: url('fonts/source-serif-pro-v11-latin-regular.eot?#iefix') format('embedded-opentype'),
+	url('fonts/source-serif-pro-v11-latin-regular.woff2') format('woff2'),
+	url('fonts/source-serif-pro-v11-latin-regular.woff') format('woff');
+	font-style: normal;
+	font-weight: normal;
+	text-rendering: optimizeLegibility;
+}
+
+@font-face {
+	font-family: 'SpaceMono';
+	src: url('fonts/SpaceMono-Regular-webfont.eot');
+	src: url('fonts/SpaceMono-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+	url('fonts/SpaceMono-Regular-webfont.woff') format('woff');
+	font-style: normal;
+	font-weight: normal;
+	text-rendering: optimizeLegibility;
+}
+
+@font-face {
+	font-family: 'Spectral';
+	src: url('fonts/spectral-v11-latin-regular.eot');
+	src: url('fonts/spectral-v11-latin-regular.eot?#iefix') format('embedded-opentype'),
+	url('fonts/spectral-v11-latin-regular.woff2') format('woff2'),
+	url('fonts/spectral-v11-latin-regular.woff') format('woff');
+	font-style: normal;
+	font-weight: normal;
+	text-rendering: optimizeLegibility;
+}
+
+@font-face {
+	font-family: 'Nunito';
+	src: url('fonts/nunito-v22-latin-regular.eot');
+	src: url('fonts/nunito-v22-latin-regular.eot?#iefix') format('embedded-opentype'),
+	url('fonts/nunito-v22-latin-regular.woff2') format('woff2'),
+	url('fonts/nunito-v22-latin-regular.woff') format('woff');
+	font-style: normal;
+	font-weight: normal;
+	text-rendering: optimizeLegibility;
+}
+
+/* ------------------- Def Basics ---------------------- */
+
+:root {
+	--akzentfarbe: #4DC1FF;
+	--basefont: 'LatoWeb';
+	--colorcorrect: #76BE45;
+	--colorincorrect: #C52F25;
+}
+
+.ip_basecolor1 {
+	color: #707070 !important;
+}
+
+.ip_basebgcolor1 {
+	background-color: #707070 !important;
+}
+
+.ip_basecolor2 {
+	color: var(--akzentfarbe) !important;
+}
+
+/* .ip_basecolor2:hover {
+	color: #ffffff !important;
+} */
+
+.ip_basebgcolor2 {
+	background-color: #d9d9d9 !important;
+}
+
+.ip_basecolor3 {
+	color: #e5e5e5 !important;
+}
+.ip_basebgcolor3 {
+	background-color: #e5e5e5 !important;
+}
+/*, .ip_spotcolor1:hover */
+.ip_basecolor4 {
+	color: #ffffff !important;
+}
+.ip_basebgcolor4, .ip_basebgcolor4:disabled:hover {
+	background-color: #ffffff !important;
+}
+
+.ip_basecolor5 {
+	color: #000000 !important;
+}
+.ip_basebgcolor5 {
+	background-color: #000000 !important;
+}
+
+.ip_basecolor6, .ip_spotcolor1:disabled, .ip_spotcolor1:disabled:hover {
+	color: #b3b3b3 !important;
+}
+.ip_basebgcolor6 {
+	background-color: #b3b3b3 !important;
+}
+
+.ip_spotcolor0 {
+	color: #767676 !important;
+}
+
+.ip_spotbgcolor0 {
+	background-color: #767676 !important;
+}
+
+.ip_spotcolor1 {
+	color: var(--akzentfarbe) !important;
+}
+
+.ip_spotbgcolor1,.ip_basebgcolor4:hover  {
+	background-color: var(--akzentfarbe) !important;
+}
+
+.ip_spotcolor2 {
+	color: #9d9d9d !important;
+}
+.ip_spotbgcolor2 {
+	background-color: #9d9d9d !important;
+}
+
+.ip_spotcolor3 {
+	color: #b6b6b6 !important;
+}
+
+.ip_spotbgcolor3 {
+	background-color: #b6b6b6 !important;
+}
+
+.ip_spotbgcolor4 {
+	background-color: #e1e1e1 !important;
+}
+
+.ip_framestyle1, .ip_framestyle1a, .ip_framestyle2, .ip_framestyle2a, .ip_framestyle3, .ip_framestyle3a,
+.ip_framestyle4, .ip_framestyle4a, .ip_framestyle6, .ip_framestyle6a,
+.ip_framestyle7, .ip_framestyle7a, .ip_framestyle8, .ip_framestyle9, .ip_framestyle10 {
+	border-style: solid !important;
+	border-width: 2px !important;
+}
+
+.ip_framestyle5, .ip_framestyle5a {
+	border-style: solid !important;
+	border-width: 1px !important;
+}
+
+.ip_framestyle1, .ip_framestyle1a, .ip_framestyle8 {
+	border-color: #d9d9d9 !important;
+}
+
+.ip_framestyle2, .ip_framestyle2a {
+	border-color: transparent !important;
+}
+
+.ip_framestyle3, .ip_framestyle3a, .ip_framestyle4a:disabled, .ip_framestyle4a:disabled:hover {
+	border-color: #b3b3b3 !important;
+}
+
+.ip_framestyle4, .ip_framestyle4a, .ip_framestyle4b, .ip_framestyle1a:hover {
+	border-color: var(--akzentfarbe) !important;
+}
+
+.ip_framestyle5, .ip_framestyle5a, .ip_framestyle4a:hover {
+	border-color: var(--akzentfarbe) !important;
+}
+
+.ip_framestyle6 {
+	border-color: var(--akzentfarbe) !important;
+	border-left-style: none !important;
+	border-top-style: none !important;
+	border-right-style: none !important;
+}
+
+.ip_framestyle7, .ip_framestyle7a {
+	border-color: #000000 !important;
+	border-style: dotted !important;
+}
+
+.ip_framestyle1a, .ip_framestyle2a, .ip_framestyle3a, .ip_framestyle4a, .ip_framestyle4b,
+.ip_framestyle5a, .ip_framestyle7a {
+	border-radius: 10px !important;
+}
+
+.ip_framestyle4b {
+	border-width: 3px !important;
+}
+
+.ip_framestyle8 {
+	border-left: 3px solid #ffa852 !important;
+	border-radius: 10px !important;
+}
+
+.ip_framestyle9, .ip_framestyle10 {
+	border-color: #ffffff !important;
+	border-left-width: 3px !important;
+	border-right: none !important;
+}
+
+.ip_framestyle9 {
+	border-left-color: #8d8d8d !important;
+}
+
+.ip_framestyle10 {
+	border-left-color: #ffa852 !important;
+}
+
+.ip_framestyle11, .ip_framestyle11a, .ip_framestyle12, .ip_framestyle12a {
+	border: none;
+	border-bottom-style: solid !important;
+}
+
+.ip_framestyle11, .ip_framestyle11a {
+	border-bottom-color: #ffa852 !important;
+}
+
+.ip_framestyle12, .ip_framestyle12a {
+	border-bottom-color: #8d8d8d !important;		
+}
+
+.ip_framestyle11a, .ip_framestyle12a {
+	border-bottom-width: 3px !important;
+}
+
+.ip_padding1 {
+	padding: 10px 15px 10px 15px !important;
+}
+
+.ip_padding2 {
+	padding: 15px 20px 15px 20px !important;
+}
+
+.ip_padding3 {
+	padding: 10px !important;
+}
+
+.ip_padding4 {
+	padding: 15px 10px 15px 10px !important;
+}
+
+.ip_padding5 {
+	padding-bottom: 10px !important;
+}
+
+.ip_margin26 {
+	margin-bottom: 18px !important;
+}
+
+.ip_fontstyle1 {
+	font-family: var(--basefont);
+}
+
+.ip_fontstyle1_imp {
+	font-family: var(--basefont) !important;
+}
+
+.ip_fontstyle1_i {
+	font-family: var(--basefont);
+	font-style: italic;
+}
+
+.ip_fontstyle1_i_imp {
+	font-family: var(--basefont) !important;
+	font-style: italic !important;
+}
+
+.ip_fontstyle1_b {
+	font-family: var(--basefont);
+	font-style: bold;
+}
+
+.ip_fontstyle1_b_imp {
+	font-family: var(--basefont) !important;
+	font-style: bold !important;
+}
+
+.ip_shadow1 {
+	box-shadow: 0px 3px 6px #00000029;
+}
+
+.ip_fontsize1, .ip_fontsize2, .ip_fontsize3, .ip_fontsize4, .ip_fontsize5, .ip_fontsize6 {
+	overflow: visible !important;
+}
+
+	/* Formel für skalierbare Fonts:
+
+    font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));
+
+    minimum size = ([maximum viewport width] / [minimum viewport width]) * 1,3
+
+     */
+
+.ip_fontsize1 {
+/* 	font-size: 18px; */
+	font-size: calc(12px + (18 - 12) * ((100vw - 960px) / (1920 - 960))) !important;
+}
+.page[max-width~="1024px"] .ip_fontsize1, .CFW_S_Idea[max-width~="1024px"] .ip_fontsize1 {
+	font-size: 13px !important;
+}
+.page[min-width~="1280px"] .ip_fontsize1, .CFW_S_Idea[min-width~="1280px"] .ip_fontsize1 {
+	font-size: 18px !important;
+}
+		/*
+@media only screen and (max-width: 1024px) {
+	.ip_fontsize1 {
+		font-size: 13px !important;
+	}
+}
+
+@media only screen and (min-width: 1280px) {
+	.ip_fontsize1 {
+		font-size: 18px !important;
+	}
+} */
+
+.ip_fontsize1.ip_maintext, .ip_fontsize1.ip_instruction {
+	line-height: 1.6em;
+}
+
+.ip_fontstyle1.ip_fontsize1.ip_basecolor1.ip_maintext > p {
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+.ip_fontsize2 {
+/*	font-size: 24px; */
+	font-size: calc(15.5px + (24 - 15.5) * ((100vw - 960px) / (1920 - 960)))!important;
+}
+.page[max-width~="1024px"] .ip_fontsize2, .CFW_S_Idea[max-width~="1024px"] .ip_fontsize2 {
+	font-size: 17px !important;
+}
+.page[min-width~="1280px"] .ip_fontsize2, .CFW_S_Idea[min-width~="1280px"] .ip_fontsize2 {
+	font-size: 24px !important;
+}
+
+.ip_fontsize3 {
+/*	font-size: 27px;
+	line-height: 33px; */
+	font-size: calc(17.5px + (27 - 17.5) * ((100vw - 960px) / (1920 - 960))) !important;
+	line-height: 1.2em;
+}
+.page[max-width~="1024px"] .ip_fontsize3, .CFW_S_Idea[max-width~="1024px"] .ip_fontsize3 {
+	font-size: 19.3px !important;
+}
+.page[min-width~="1280px"] .ip_fontsize3, .CFW_S_Idea[min-width~="1280px"] .ip_fontsize3 {
+	font-size: 27px !important;
+}
+
+.ip_fontsize4 {
+/*	font-size: 16px; */
+	font-size: calc(10.5px + (16 - 10.5) * ((100vw - 960px) / (1920 - 960))) !important;
+}
+.page[max-width~="1024px"] .ip_fontsize4, .CFW_S_Idea[max-width~="1024px"] .ip_fontsize4 {
+	font-size: 11px !important;
+}
+.page[min-width~="1280px"] .ip_fontsize4, .CFW_S_Idea[min-width~="1280px"] .ip_fontsize4 {
+	font-size: 16px !important;
+}
+
+.ip_fontsize5 {
+	font-size: calc(11.5px + (17 - 11.5) * ((100vw - 960px) / (1920 - 960))) !important;
+}
+.page[max-width~="1024px"] .ip_fontsize5, .CFW_S_Idea[max-width~="1024px"] .ip_fontsize5 {
+	font-size: 12px !important;
+}
+.page[min-width~="1280px"] .ip_fontsize5, .CFW_S_Idea[min-width~="1280px"] .ip_fontsize5 {
+	font-size: 17px !important;
+}
+
+.ip_fontsize6 {
+	font-size: calc(9.75px + (15 - 9.75) * ((100vw - 960px) / (1920 - 960))) !important;
+}
+.page[max-width~="1024px"] .ip_fontsize6, .CFW_S_Idea[max-width~="1024px"] .ip_fontsize6 {
+	font-size: 10.4px !important;
+}
+.page[min-width~="1280px"] .ip_fontsize6, .CFW_S_Idea[min-width~="1280px"] .ip_fontsize6 {
+	font-size: 15px !important;
+}
+
+.ip_fontsize7 {
+	font-size: calc(19.5px + (30 - 19.5) * ((100vw - 960px) / (1920 - 960))) !important;
+}
+.page[max-width~="1024px"] .ip_fontsize7, .CFW_S_Idea[max-width~="1024px"] .ip_fontsize7 {
+	font-size: 21px !important;
+}
+.page[min-width~="1280px"] .ip_fontsize7, .CFW_S_Idea[min-width~="1280px"] .ip_fontsize7 {
+	font-size: 30px !important;
+}
+
+/* ***** Komponenten ****** */
+
+.mcOption input[type='checkbox']:checked + span::before {
+	color: var(--akzentfarbe) !important;
+}
+
+.scOption input[type='radio']:checked  + span::before {
+	background: var(--akzentfarbe) !important;
+}
+
+.icSwitch label.cb-enable.selected span, .icSwitch label.cb-disable.selected span {
+	background: var(--akzentfarbe);
+	color: #ffffff;
+}
+
+.icSwitch.start label.cb-enable.selected span, .icSwitch.start label.cb-disable.selected span {
+    background: #ffffff;
+    color: var(--akzentfarbe);
+}
+
+/*input.luecke, input.resizeselect, span.luecke, select.select, select.resizeselect {
+    color: var(--akzentfarbe) !important;
+}*/
+
+	/* **************************** Feedback *************************** */
+
+.mcOption.correct, .scOption.correct, /*.mtxGroup.correct,*/
+.icInput.correct,
+.myAnswer .switchgroup.correct {
+	border-color: var(--colorcorrect) !important;
+	border-style: solid !important;
+}
+
+.mcOption.correct input[type='checkbox']:checked + span::before,
+.scOption.correct input[type='radio']:checked + span::before {
+	color: var(--colorcorrect);
+	border-color: var(--colorcorrect);
+	border-style: solid !important;
+	background-color: var(--colorcorrect) !important;
+}
+.mcOption.correct input[type='checkbox']:checked + span::before {
+	background-color: white !important;
+	color: var(--colorcorrect) !important;
+}
+
+.mcOption.incorrect, .scOption.incorrect, /*.mtxGroup.incorrect,*/
+.icInput.incorrect,
+.myAnswer .switchgroup.incorrect {
+	border-color: var(--colorincorrect) !important;
+	border-style: solid !important;	
+}
+
+.mcOption.incorrect input[type='checkbox']:checked + span::before,
+.scOption.incorrect input[type='radio']:checked + span::before {
+	color: var(--colorincorrect);
+	border-color: var(--colorincorrect);
+	border-style: solid !important;
+	background-color: var(--colorincorrect) !important;
+}
+
+.mcOption.incorrect input[type='checkbox']:checked + span::before {
+	background-color: white !important;
+	color: var(--colorincorrect) !important;
+}
+
+span.luecke.correct, span.luecke.incorrect {
+	border-bottom-style:  solid !important;
+	border-width: 0 0 2px 0 !important;
+}
+
+/* *** knowtion *** */
+
+.myAnswer .mcOption span, .myAnswer .scOption span, .myAnswer .icSwitch label,
+.myAnswer .sort li, .myAnswer .icmDrag, .myAnswer .icmDragPic {
+	cursor: default !important;
+}
+
+.myAnswer .icSwitch.icSolutionSwitch label {
+	cursor: pointer !important;
+}
+
+.icmDrag.correct, .icmDragPic.multi.correct {
+	margin: 0px !important;
+	border: none !important;
+	color: #ffffff !important;
+	background-color: var(--colorcorrect) !important;
+}
+
+.icmDrag.correct:before, .icmDragPic.multi.correct:before {
+	content: url("drag-richtig.svg");
+}
+
+.icmDrag.incorrect, .icmDragPic.multi.incorrect {
+	margin: 0px !important;
+	border: none !important;
+	color: #ffffff !important;
+	background-color: var(--colorincorrect) !important;
+}
+
+.icmDrag.incorrect:before, .icmDragPic.multi.incorrect:before  {
+	content: url("drag-falsch.svg");
+}
+
+.solution .icmDrag.correct {
+	background-color: #b2b2b2 !important;
+}
+
+.mcOption.mcHotspot.correct, .mcOption.mcHotspot.incorrect {
+	border: none !important;
+}
+/*
+.solution .mcOption.correct input[type="checkbox"]:checked + span::before,
+.solution .scOption.correct input[type="radio"]:checked + span::before {
+	background-color: #B2B2B2 !important;
+}
+*/
+.mcOption.mcHotspot input[type="checkbox"] + span::before {
+	background-position: center !important;
+	background-repeat: no-repeat !important;
+}
+
+.solution .mcOption.mcHotspot.correct input[type="checkbox"]:checked + span::before {
+	background-image: url(haken-weiss.svg) !important;
+	background-size: 55% !important;
+}
+
+.solution .mcOption.mcHotspot.incorrect input[type="checkbox"]:not(:checked) + span::before {
+	background-image: url("kreuz-grau.svg");
+	background-size: 45%;
+}
+
+.solution .icAnswer_List.correct {
+	color: #B2B2B2 !important;
+}
+
+.solution .icAnswer_List.correct {
+	background: none;
+	border-right-width: 2px	!important;
+}
+
+.myAnswer .scOption:before,
+.myAnswer .mcOption:before,
+.myAnswer .switchgroup:before /*,
+.myAnswer .mtxGroup:before*/ {
+	position: absolute;
+	right: -11px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.myAnswer .scOption.incorrect:before,
+.myAnswer .mcOption.incorrect:before,
+.myAnswer .switchgroup.incorrect:before /*,
+.myAnswer .mtxGroup.incorrect:before*/ {
+	content: url("feedback-falsch.svg");
+}
+
+.myAnswer .scOption.correct:before,
+.myAnswer .mcOption.correct:before,
+.myAnswer .switchgroup.correct:before /*,
+.myAnswer .mtxGroup.correct:before*/ {
+	content: url("feedback-richtig.svg");
+}
+
+.myAnswer .scOption.correct input[type="radio"]:not(:checked) + span::before,
+.myAnswer .scOption.correct input[type="radio"]:checked + span::before,
+.myAnswer .mcOption.correct input[type="checkbox"]:not(:checked) + span::before,
+.myAnswer .mcOption.correct input[type="checkbox"]:checked + span::before,
+.myAnswer .switchgroup.correct .icSwitch,
+.myAnswer .icEntertext.correct, .myAnswer .icAnswer_List.correct,
+.myAnswer input.luecke.correct, select.select.correct,
+	/*.myAnswer .mtxGroup.correct .scOption input[type="radio"]:not(:checked) + span::before,*/
+.myAnswer .mtxGroup.correct .scOption input[type="radio"]:checked + span::before {
+	border-color: var(--colorcorrect) !important;
+}
+
+.myAnswer .scOption.incorrect input[type="radio"]:not(:checked) + span::before,
+.myAnswer .scOption.incorrect input[type="radio"]:checked + span::before,
+.myAnswer .mcOption.incorrect input[type="checkbox"]:not(:checked) + span::before,
+.myAnswer .mcOption.incorrect input[type="checkbox"]:checked + span::before,
+.myAnswer .switchgroup.incorrect .icSwitch,
+.myAnswer .icEntertext.incorrect, .myAnswer .icAnswer_List.incorrect,
+.myAnswer input.luecke.incorrect, select.select.incorrect,
+	/*.myAnswer .mtxGroup.incorrect .scOption input[type="radio"]:not(:checked) + span::before,*/
+.myAnswer .mtxGroup.incorrect .scOption input[type="radio"]:checked + span::before {
+	border-color: var(--colorincorrect) !important;
+}
+
+/* .myAnswer input.luecke.correct, .myAnswer input.luecke.incorrect {
+	border-color: var(--akzentfarbe) !important;
+} */
+
+.myAnswer .scOption.correct input[type="radio"]:checked + span::before,
+.myAnswer .mcOption.correct input[type="checkbox"]:checked + span::before,
+.myAnswer .switchgroup.correct .icSwitch label.cb-enable.selected span,
+.myAnswer .switchgroup.correct .icSwitch label.cb-disable.selected span,
+.myAnswer .mtxGroup.correct .scOption input[type="radio"]:checked + span::before {
+	background-color: var(--colorcorrect) !important;
+}
+
+.myAnswer .mtxGroup.correct .scOption input[type="radio"]:checked + span::before,
+.myAnswer .mtxGroup.incorrect .scOption input[type="radio"]:checked + span::before {
+	background-position: center !important;
+	background-repeat: no-repeat !important;
+}
+
+.myAnswer .mtxGroup.correct .scOption input[type="radio"]:checked + span::before {
+	background-image: url(drag-richtig.svg) !important;
+}
+
+.myAnswer .scOption.incorrect input[type="radio"]:checked + span::before,
+.myAnswer .mcOption.incorrect input[type="checkbox"]:checked + span::before,
+.myAnswer .switchgroup.incorrect .icSwitch label.cb-disable.selected span,
+.myAnswer .switchgroup.incorrect .icSwitch label.cb-enable.selected span,
+.myAnswer .mtxGroup.incorrect .scOption input[type="radio"]:checked + span::before {
+	background-color: var(--colorincorrect) !important;
+}
+
+.myAnswer .mtxGroup.incorrect .scOption input[type="radio"]:checked + span::before {
+	background-image: url(drag-falsch.svg) !important;
+	background-size: 40% !important;
+}
+
+.myAnswer .mcOption.mcHotspot.correct:before, .myAnswer .mcOption.mcHotspot.incorrect:before {
+	content: none;
+}
+
+.myAnswer .mcOption.mcHotspot.correct input[type="checkbox"]:checked + span::before {
+	background-image: url(haken-weiss.svg) !important;
+	background-size: 55% !important;
+}
+
+.myAnswer .mcOption.mcHotspot.incorrect input[type="checkbox"]:checked + span::before {
+	background-image: url("kreuz-weiss.svg") !important;
+	background-size: 45% !important;
+}
+
+.myAnswer .mcOption.mcHotspot.correct_nc input[type="checkbox"]:not(:checked) + span::before {
+	background-image: url(haken-gruen.svg) !important;
+	background-size: 55% !important;
+	border-color: var(--colorcorrect) !important;
+}
+
+.myAnswer .mcOption.mcHotspot.incorrect_nc input[type="checkbox"]:not(:checked) + span::before {
+	background-image: url("kreuz-rot.svg") !important;
+	background-size: 45% !important;
+	border-color: var(--colorincorrect) !important;
+}
+
+.myAnswer .switchgroup.incorrect .icSwitch.start label.cb-disable.selected span,
+.myAnswer .switchgroup.incorrect .icSwitch.start label.cb-enable.selected span {
+	background-color: #ffffff !important;
+}
+
+.myAnswer .switchgroup.correct .icSwitch label.cb-disable.selected span,
+.myAnswer .switchgroup.correct .icSwitch label.cb-enable.selected span,
+.myAnswer .switchgroup.incorrect .icSwitch label.cb-disable.selected span,
+.myAnswer .switchgroup.incorrect .icSwitch label.cb-enable.selected span {
+	color: #ffffff !important;
+}
+
+.myAnswer .switchgroup.correct .icSwitch label.cb-disable span,
+.myAnswer .switchgroup.correct .icSwitch label.cb-enable span,
+.myAnswer .switchgroup.correct .icSwitch.start label.cb-disable.selected span,
+.myAnswer .switchgroup.correct .icSwitch.start label.cb-enable.selected span {
+	color: var(--colorcorrect) !important;
+	border-color: var(--colorcorrect) !important;
+}
+
+.myAnswer .switchgroup.correct .icSwitch label:first-child span {
+	border-right: 1px solid #77be45;
+}
+
+.myAnswer .switchgroup.incorrect .icSwitch label:first-child span {
+	border-right: 1px solid var(--colorincorrect);
+}
+
+.myAnswer .switchgroup.incorrect .icSwitch label.cb-disable span,
+.myAnswer .switchgroup.incorrect .icSwitch label.cb-enable span,
+.myAnswer .switchgroup.incorrect .icSwitch label.cb-disable.selected span,
+.myAnswer .switchgroup.incorrect .icSwitch label.cb-enable.selected span,
+.myAnswer .switchgroup.incorrect .icSwitch.start label.cb-disable.selected span,
+.myAnswer .switchgroup.incorrect .icSwitch.start label.cb-enable.selected span {
+	border-color: var(--colorincorrect) !important;
+}
+
+.myAnswer .switchgroup.incorrect .icSwitch label.cb-disable span,
+.myAnswer .switchgroup.incorrect .icSwitch label.cb-enable span,
+.myAnswer .switchgroup.incorrect .icSwitch.start label.cb-disable.selected span,
+.myAnswer .switchgroup.incorrect .icSwitch.start label.cb-enable.selected span {
+	color: var(--colorincorrect) !important;
+}
+
+.myAnswer .switchgroup.incorrect .icSwitch.start label:first-child {
+	border-right: 1px solid var(--colorincorrect);
+}
+
+.icEntertext.correct, .icEntertext.incorrect,
+input.luecke.correct, input.luecke.incorrect,
+span.luecke.correct, span.luecke.incorrect,
+.icAnswer_List.correct, .icAnswer_List.incorrect,
+select.select.correct, select.select.incorrect {
+	background-position: 95% !important;
+	background-origin: padding-box;
+	background-repeat: no-repeat;
+	background-size: auto !important;
+	padding-right: 30px !important;
+}
+
+.icEntertext.correct, input.luecke.correct, span.luecke.correct,
+.icAnswer_List.correct, select.select.correct {
+	background-image:  url("feedback-richtig.svg");
+}
+
+.icEntertext.incorrect, input.luecke.incorrect, span.luecke.incorrect,
+.icAnswer_List.incorrect, select.select.incorrect {
+	background-image:  url("feedback-falsch.svg");
+}
+
+/* .myAnswer input.luecke.correct, .myAnswer input.luecke.incorrect {
+	background: none !important;
+} */
+
+.icSwitch.ip_framestyle4a {
+	border-radius: 17px !important;
+}
+
+.solution .sort li.correct, .solution .sort li.incorrect {
+	background-color: #b2b2b2 !important;
+	padding: 10px 40px 10px 10px;
+}
+
+.solution .sort li.correct:after, .solution .sort li.incorrect:after {
+	display: none;
+}
+
+.myAnswer .sort li.correct {
+	background-color: var(--colorcorrect) !important;
+	padding: 10px 40px 10px 10px;
+}
+
+.myAnswer .sort li.incorrect {
+	background-color: var(--colorincorrect) !important;
+	padding: 10px 40px 10px 10px;
+}
+
+.myAnswer .sort li.correct:after, .myAnswer .sort li.incorrect:after {
+	left: unset;
+	right: 13px;
+}
+
+.myAnswer .sort li.correct:after {
+	content: url("feedback-richtig.svg");
+}
+
+.myAnswer .sort li.incorrect:after {
+	content: url("feedback-falsch.svg");
+}
+
+.iPage_mcPic .ipcAnswerCont.correct, .iPage_mcPic .ipcAnswerInnerCont.correct,
+.iPage_mcPic .ipcAnswerCont.incorrect, .iPage_mcPic .ipcAnswerInnerCont.incorrect {
+	transform: scale(1.1) translateY(-1%);
+}
+
+.iPage_mcPic .scOptionPic.correct {
+	box-shadow: 0px 0px 25px var(--colorcorrect);
+}
+
+.iPage_mcPic .ipcAnswerCont.correct:after, .iPage_mcPic .ipcAnswerInnerCont.correct:after,
+.iPage_mcPic .ipcAnswerCont.correct_nc:after, .iPage_mcPic .ipcAnswerInnerCont.correct_nc:after {
+	background-image: url("feedback-richtig.svg");
+}
+
+.iPage_mcPic .scOptionPic.incorrect {
+	box-shadow: 0px 0px 25px var(--colorincorrect);
+}
+.iPage_mcPic .ipcAnswerCont.incorrect:after, .iPage_mcPic .ipcAnswerInnerCont.incorrect:after,
+.iPage_mcPic .ipcAnswerCont.incorrect_nc:after, .iPage_mcPic .ipcAnswerInnerCont.incorrect_nc:after {
+	background-image: url("feedback-falsch.svg");
+}
+
+.iPage_mcPic .ipcAnswerCont:after, .iPage_mcPic .ipcAnswerInnerCont:after {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translate3d(-50%, 15px, 0px);
+	content: "";
+	width: 24px;
+	height: 24px;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.iPage_mcPic .ipcAnswerCont.correct:after, .iPage_mcPic .ipcAnswerCont.incorrect:after {
+	transform: translate3d(-50%, 9px, 0px) scale(0.9);
+}
+
+.iPage_mcPic .ipcAnswerInnerCont.correct:after, .iPage_mcPic .ipcAnswerInnerCont.incorrect:after {
+	transform: translate3d(-50%, 13px, 0px) scale(0.9);
+}
+
+.iPage_mcPic .icAnswerText.correct {
+	color: var(--colorcorrect) !important;
+	margin-top: 20px !important;
+}
+
+.iPage_mcPic .icAnswerText.incorrect {
+	color: var(--colorincorrect) !important;
+	margin-top: 20px !important;
+}
+
+.page[max-width~="800px"].iPage_mcPic .icAnswerText.correct, .CFW_S_Idea[max-width~="800px"] .iPage_mcPic .icAnswerText.correct,
+.page[max-width~="800px"].iPage_mcPic .icAnswerText.incorrect, .CFW_S_Idea[max-width~="800px"] .iPage_mcPic .icAnswerText.incorrect {
+	margin-top: 40px !important;
+}
+
+.iPage_mcPic .ipcAnswerCont.correct_nc, .iPage_mcPic .ipcAnswerInnerCont.correct_nc,
+.iPage_mcPic.iPage_mcPicTxt.iPage_mcMC .ipcAnswerInnerCont.correct_nc {
+	padding: 4px !important;
+	border: 2px solid var(--colorcorrect) !important;
+}
+
+.iPage_mcPic .ipcAnswerCont.incorrect_nc, .iPage_mcPic .ipcAnswerInnerCont.incorrect_nc,
+.iPage_mcPic.iPage_mcPicTxt.iPage_mcMC .ipcAnswerInnerCont.incorrect_nc {
+	padding: 4px !important;
+	border: 2px solid var(--colorincorrect) !important;
+}
+
+.iPage_ddPic.solution .icmDragPic.correct {
+	border: 5px solid #b2b2b2 !important;
+	position: relative;
+}
+.iPage_ddPic.solution .icmDragPic:after, .iPage_ddPic.myAnswer .icmDragPic:after {
+	position: absolute;
+	right: -5px;
+	top: -5px;
+}
+.iPage_ddPic.solution .icmDragPic.correct:after {
+	content: url("haken-grau-voll.svg");
+}
+.iPage_ddPic.myAnswer .icmDragPic.correct {
+	border: 5px solid var(--colorcorrect) !important;
+	position: relative;
+}
+.iPage_ddPic.myAnswer .icmDragPic.correct:after {
+	content: url("haken-gruen-voll.svg");
+}
+.iPage_ddPic.myAnswer .icmDragPic.incorrect {
+	border: 5px solid var(--colorincorrect) !important;
+	position: relative;
+}
+.iPage_ddPic.myAnswer .icmDragPic.incorrect:after {
+	content: url("kreuz-rot-voll.svg");
+}

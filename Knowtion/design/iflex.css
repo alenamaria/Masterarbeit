@@ -1,0 +1,1450 @@
+/* ******* Flex - Layout ******* */
+
+.currentPage {
+	flex-direction: row;
+	flex-wrap: wrap;
+	/*	justify-content: space-between;*/
+	align-items: flex-start;
+	align-content: flex-start;
+}
+
+.page, .currentPage.master {
+	align-items: stretch !important;
+	align-content: flex-start;
+	height: 100% !important;
+}
+
+.ipTop, .ipLeft, .ipCenter, .ipRight, .ipBottom {
+	margin: 10px 15px;
+	/*	align-items: flex-start; */
+}
+
+.page .ipTop, .page .ipBottom {
+	min-height: 25px;
+}
+
+.ipTop {
+	margin-top: 30px;
+	margin-bottom: 25px;
+}
+
+/* ******* Flex - Ausrichtung ******* */
+
+.flex_row {
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
+
+.flex_col {
+	flex-direction: column;
+	flex-wrap: nowrap;
+}
+
+.flex_row_wrap {
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.flex_col_wrap {
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+.flex_wrap {
+	flex-wrap: wrap;
+}
+
+.flex_nowrap {
+	flex-wrap: nowrap;
+}
+
+.flex_flow_wrap {
+	flex-flow: wrap;
+}
+
+.flex_grow {
+	flex-grow: 1;
+}
+
+.flex_just_spc_start {
+	justify-content: flex-start;
+}
+
+.flex_just_spc_start.flex_flow_wrap {
+	align-content: flex-start;
+}
+
+.flex_just_spc_cntr {
+	justify-content: center;
+}
+
+.flex_just_spc_cntr.flex_flow_wrap {
+	align-content: center;
+}
+
+.flex_just_spc_end {
+	justify-content: flex-end;
+}
+
+.flex_just_spc_end.flex_flow_wrap {
+	align-content: flex-end;
+}
+
+.flex_just_spc_arnd {
+	justify-content: space-around;
+}
+
+.flex_just_spc_btwn {
+	justify-content: space-between;
+}
+
+.flex_row_wrap.flex_items_start {
+	align-items: flex-start;
+	align-content: flex-start;
+}
+.flex_row_wrap.flex_items_end {
+	align-items: flex-start;
+	align-content: flex-end;
+}
+.flex_row_wrap.flex_items_cntr {
+	align-items: flex-start;
+	align-content: center;
+}
+
+.flex_items_start {
+	align-items: flex-start;
+}
+.flex_items_end {
+	align-items: flex-end;
+}
+.flex_items_cntr {
+	align-items: center;
+}
+.flex_items_stretch {
+	align-items: stretch;
+}
+
+.flex_alignself_start {
+	align-self: flex-start;
+	height: auto !important;
+	min-height: unset !important;
+}
+
+.page .flex_alignself_start {
+	min-height: 25px !important;
+}
+
+.flex_alignself_min {
+	align-self: flex-start;
+	/*	height: auto !important;
+        min-height: none !important; */
+}
+
+.currentPage .flex_alignself_min.minH {
+	height: auto !important;
+}
+
+.flex_alignself_stretch {
+	align-self: stretch;
+	/*	height: auto !important;
+        min-height: none !important; */
+}
+
+/* ******* non-flex  ******* */
+
+.nonflex_left {
+	text-align: left;
+}
+
+.nonflex_cntr {
+	text-align: center;
+}
+
+.nonflex_right {
+	text-align: right;
+}
+
+/* *******   ******* */
+
+.ipCenter {
+	flex-grow: 1;
+	flex-basis: min-content;
+}
+
+.page .ipCenter {
+	min-height: 25px;
+}
+
+.frMobilePageEditCFW_S_Idea .page .ipCenter {
+	height: auto !important;
+	min-height: 100% !important;
+}
+
+.frMobilePageEditCFW_S_Idea .page.iPage_hotspotInfo.noText .ipCenter {
+	height: 100% !important;
+}
+
+.ipCenter.row {
+	/*	margin-left: 0;*/
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	align-content: flex-start;
+}
+
+.master .ipTop, .master .ipLeft, .master .ipCenter,
+.master .ipRight, .master .ipBottom {
+	min-height: 50px !important;
+}
+
+/* IE-Hack f�r Diashow*/
+@media screen\0 {
+	.slideshow .ipRespoBox1 {
+		display: inline-block !important;
+	}
+}
+
+/* ************ Box Layout Template ****************** */
+
+.ipRespoBox1, .ipRespoBox2, .ipRespoBox3, .ipRespoBox4 {
+	transition: width .25s linear, left .25s linear, top .25s linear;
+	-o-transition: width .25s linear, left .25s linear, top .25s linear;
+	-moz-transition: width .25s linear, left .25s linear, top .25s linear;
+	-webkit-transition: width .25s linear, left .25s linear, top .25s linear;
+}
+
+.ipRespoBox1 > div:first-child, .ipRespoBox2 > div:first-child, .ipRespoBox3 > div:first-child, .ipRespoBox4 > div:first-child {
+	display: none;
+}
+
+/* für knowtion eingefügt ANFANG */
+
+.overflow_auto {
+	overflow: auto !important;
+}
+
+.overflow_vis {
+	overflow: visible !important;
+}
+
+.flex_display {
+	display: flex !important;
+}
+
+.flex_content_stretch {
+	align-content: stretch;
+}
+
+.h_100 {
+	height: 100%;
+}
+
+#_KContainer .h_100 {
+	height: auto;
+}
+
+.min_h_100 {
+	min-height: 100%;
+}
+
+.pos_rel {
+	position: relative;
+}
+
+.pos_abs {
+	position: absolute;
+}
+
+.blur_pic {
+	filter: blur(20px);
+	transform: scale(1.1);
+}
+
+.ic_PopUpBlurContainer.blur_pic {
+	filter: blur(10px);
+}
+
+.bg_pic_100 {
+	height: 100% !important;
+	width: 100% !important;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.contain_pic {
+	width: 100% !important;
+	height: 100% !important;
+	object-fit: contain;
+}
+
+.cover_pic,
+.commentbox .cover_pic img {
+	width: 100% !important;
+	height: 100%;
+	object-fit: cover;
+}
+
+.mar_0 {
+	margin: 0;
+}
+.mar_l40 {
+	margin-left: 40% !important;
+}
+
+.mar_b5	{
+	margin-bottom: 5px;
+}
+
+.mar_b20 {
+	margin-bottom: 20px;
+}
+
+.mar_b60 {
+	margin-bottom: 60px;
+}
+
+.mar_t5	{
+	margin-top: 5px;
+}
+
+.pad_0 {
+	padding: 0;
+}
+
+.pad_7 {
+	/*	padding: 7.5% 7.5% 7.5% 7.5% !important; */
+	padding-left: min(80px, 7.5%) !important;
+	padding-right: min(80px, 7.5%) !important;
+	padding-top: min(80px, 7.5%) !important;
+	padding-bottom: min(80px, 7.5%) !important;
+}
+
+.btn_padding {
+	padding: 12px 30px !important;
+}
+
+.two_columns {
+	display: inline-flex !important;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.two_columns .scOption,
+.two_columns .switchgroup {
+	width: calc(50% - 30px);
+	max-width: calc(50% - 30px);
+}
+
+/* *** ** *** */
+
+.iPage_ddText0 .ipRespoBox2, .iPage_ddText1 .ipRespoBox2 {
+	width: 67% !important;
+}
+
+.iPage_ddText0.iPage_ddTextPic .ipRespoBox2, .iPage_ddText0.iPage_ddTextToPic .ipRespoBox2 {
+	width: 50% !important;
+}
+
+.iPage_ddText0.iPage_ddPic .ipRespoBox2 {
+	width: 34% !important;
+}
+
+.iPage_ddText1 .icAnswer_List {
+	display: none !important;
+}
+
+.page[max-width~="800px"].iPage_ddText1 .icAnswer_List, .CFW_S_Idea[max-width~="800px"] .iPage_ddText1 .icAnswer_List {
+	display: inline-block !important;
+}
+
+.page[max-width~="800px"].iPage_ddText1 .ipRespoBox1, .CFW_S_Idea[max-width~="800px"] .iPage_ddText1 .ipRespoBox1,
+.page[max-width~="800px"].iPage_ddText1 .icmDrop, .CFW_S_Idea[max-width~="800px"] .iPage_ddText1 .icmDrop,
+.page[max-width~="800px"].iPage_ddText1 .icmDrag, .CFW_S_Idea[max-width~="800px"] .iPage_ddText1 .icmDrag {
+	display: none !important;
+}
+
+/* *** ** *** */
+
+.ipContainer2_1 {
+	min-height: 40px;
+}
+
+.ipContainer2_2 {
+	overflow: visible !important;
+}
+
+/* *** Seiten *** */
+
+/* Startseite / Endeseite */
+
+.iPage_start .ipRespoBox2, .iPage_ende .ipRespoBox2, .iPage_sitemap .ipRespoBox1 {
+	position: relative;
+}
+
+.iPage_start .pageStartLogo, .iPage_ende .pageStartLogo, .iPage_sitemap .pageStartLogo {
+	object-fit: contain;
+	padding: 10px !important;
+	border-bottom: 1px solid #b2b2b2 !important;
+	background-color: #ffffff !important;
+	z-index: 10000 !important;
+}
+
+.iPage_start .ip_title {
+	margin-top: 50px !important;
+}
+
+.iPage_start.noLogo .ip_title {
+	margin-top: 0 !important;
+}
+
+.page[max-width~="800px"].iPage_start .ipCenter, .CFW_S_Idea[max-width~="800px"] .iPage_start .ipCenter {
+	padding-top: 90px !important;
+}
+
+.page[max-width~="800px"].iPage_start.noLogo .ipCenter, .CFW_S_Idea[max-width~="800px"] .iPage_start.noLogo .ipCenter {
+	padding-top: 0 !important;
+}
+
+.page[max-width~="800px"].iPage_start .ipRespoBox2, .CFW_S_Idea[max-width~="800px"] .iPage_start .ipRespoBox2 {
+	position: unset;
+}
+
+.page[max-width~="800px"].iPage_start .ip_title, .CFW_S_Idea[max-width~="800px"] .iPage_start .ip_title {
+	margin-top: 0px !important;
+}
+
+/* Hauptmenü */
+
+.iPage_mainMenu .ipCenter {
+	flex-wrap: wrap;
+	overflow-y: auto !important;
+}
+
+.iPage_mainMenu .ipRespoBox1 {
+	flex-direction: column;
+	justify-content: center;
+}
+
+.iPage_mainMenu1 .ipCenter {
+	justify-content: center;
+}
+
+.iPage_mainMenu1 .ipRespoBox1 {
+	width: 33% !important;
+}
+
+.page[max-width~="1200px"].iPage_mainMenu1 .ipRespoBox1, .CFW_S_Idea[max-width~="1200px"] .iPage_mainMenu1 .ipRespoBox1 {
+	width: 50% !important;
+}
+
+.page[max-width~="800px"].iPage_mainMenu1, .CFW_S_Idea[max-width~="800px"] .iPage_mainMenu1 {
+	overflow: hidden !important;
+}
+
+.iPage_mainMenu1 .pageLogo {
+	position: absolute;
+	top: 0;
+	left: 2%;
+	object-fit: contain;
+	padding: 10px !important;
+	background-color: #ffffff !important;
+}
+
+/* .page[max-width~="800px"].iPage_mainMenu1 .ipCenter, .CFW_S_Idea[max-width~="800px"] .iPage_mainMenu1 .ipCenter {
+	height: calc(100% - 180px) !important;
+	margin-top: 180px;
+	min-height: unset;
+} */
+
+.page[max-width~="800px"].iPage_mainMenu1.logo .ipCenter, .CFW_S_Idea[max-width~="800px"] .iPage_mainMenu1.logo .ipCenter {
+/*	height: calc(100% - 240px) !important;
+	margin-top: 240px; */
+	padding-top: 50px !important;
+}
+
+.page[max-width~="800px"].iPage_mainMenu1 .ipRespoBox1, .CFW_S_Idea[max-width~="800px"] .iPage_mainMenu1 .ipRespoBox1 {
+	width: 100% !important;
+	margin-left: 30px;
+	margin-right: 30px;
+	max-height: unset;
+	overflow: visible !important;
+}
+
+/* .page[max-width~="800px"].iPage_mainMenu1 .chapterTitle, .CFW_S_Idea[max-width~="800px"] .iPage_mainMenu1  .chapterTitle {
+	z-index: 500010 !important;
+	position: absolute;
+	top: 0;
+	width: calc(100% - 60px) !important;
+}
+
+.page[max-width~="800px"].iPage_mainMenu1.logo .chapterTitle, .CFW_S_Idea[max-width~="800px"] .iPage_mainMenu1.logo  .chapterTitle {
+	top: 80px;
+} */
+
+.page[max-width~="800px"].iPage_mainMenu1 .pageLogo, .CFW_S_Idea[max-width~="800px"] .iPage_mainMenu1 .pageLogo {
+/*	position: absolute;
+	top: 0;
+	left: 0 !important;
+	width: 100% !important; */
+	width: calc(100% + 60px) !important;
+	margin-left: -30px;
+	box-shadow: none;
+	object-fit: contain;
+	padding: 20px !important;
+	border-bottom: 1px solid #b2b2b2 !important;
+	background-color: #ffffff !important;
+	z-index: 100000;
+}
+
+.iPage_mainMenu1 .chapterLocked .chapterLink {
+	text-decoration: none;
+	color: #b2b2b2 !important;
+	cursor: default !important;
+}
+
+.iPage_mainMenu2 .ipRespoBox1 {
+	width: 50% !important;
+	background-color: #ffffff !important;
+}
+
+.iPage_mainMenu2 .ipRespoBox2 {
+	display: inline-block !important;
+}
+
+/* Text */
+
+
+/* Video */
+
+.iPage_video .blur_pic {
+	display: none !important;
+}
+
+.iPage_video.videoRightPic .blur_pic, .iPage_video.videoLeftPic .blur_pic {
+	display: inline-block !important;
+	width: 80% !important;
+}
+
+.iPage_video.videoRightPic .blur_pic {
+	left: 20% !important;
+}
+
+.iPage_video.videoLeftPic .blur_pic {
+	left: 0 !important;
+}
+
+.iPage_video.videoRightPic .ipRespoBox1 {
+	order: 2;
+}
+.iPage_video.videoRightPic .ipRespoBox2 {
+	order: 1;
+}
+
+.page[max-width~="800px"].iPage_video.noText .ipRespoBox1, .CFW_S_Idea[max-width~="800px"] .iPage_video.noText .ipRespoBox1 {
+	max-height: 100%;
+}
+
+/* HotSpot - Klick + Info */
+
+.iPage_hotspotInfo .ipCenter1 {
+	overflow: visible !important;
+	width: auto !important;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.page.iPage_hotspotInfo .ipCenter1 {
+	min-width: 50%;
+}
+
+.page[max-width~="800px"].iPage_hotspotInfo .ipRespoBox1 ,.CFW_S_Idea[max-width~="800px"] .iPage_hotspotInfo .ipRespoBox1 {
+	max-height: unset;
+}
+
+.iPage_hotspotInfo .hotspotImg, .iPage_HotSpot1 .hotspotImg {
+	position: relative;
+	overflow: visible !important;
+}
+
+.iPage_hotspotInfo.noText .hotspotImg {
+	position: relative;
+	overflow: visible !important;
+	width: auto !important;
+	max-height: 100%;
+}
+
+/* Klick & Info */
+
+.iPage_klickInfo.infoLeft .ipRespoBox1, .iPage_klickInfo.infoRight .ipRespoBox1 {
+	display: none!important;
+}
+
+.iPage_klickInfo.infoLeft .ipRespoBox2, .iPage_klickInfo.infoRight .ipRespoBox2 {
+	display: flex !important;
+	width: 100% !important;
+	height: 100% !important;
+}
+
+.iPage_klickInfo.infoLeft .ipRespoBox2_1, .iPage_klickInfo.infoRight .ipRespoBox2_1,
+.iPage_klickInfo.infoLeft .ipRespoBox2_2, .iPage_klickInfo.infoRight .ipRespoBox2_2 {
+	width: 50% !important;
+	height: 100% !important;
+	overflow-y: auto !important;
+}
+
+.iPage_klickInfo.infoLeft .ipRespoBox2_2, .iPage_klickInfo.infoRight .ipRespoBox2_1 {
+	order: 1;
+}
+
+.iPage_klickInfo.infoLeft .ipRespoBox2_1, .iPage_klickInfo.infoRight .ipRespoBox2_2 {
+	order: 2;
+}
+
+.iPage_klickInfo.picLeft .ipRespoBox2_2, .iPage_klickInfo.picRight .ipRespoBox2_2,
+.iPage_klickInfo.picOneThirdLeft .ipRespoBox2_2, .iPage_klickInfo.picOneThirdRight  .ipRespoBox2_2{
+	padding-top: 0 !important;
+}
+
+/* Test-Endeseite */
+
+.iPage_testEnde .ipRespoBox2, .iPage_testDetails .ipRespoBox2 {
+	order: 2;
+}
+.iPage_testEnde .ipRespoBox1, .iPage_testDetails .ipRespoBox1 {
+	order: 1;
+}
+.iPage_testEnde .ip_title {
+	order: 1;
+}
+.iPage_testEnde .ipCenter1, .iPage_testEnde .ipCenter2 {
+	order: 2;
+	justify-content: space-between;
+}
+
+.iPage_testEnde .ipCenter1 {
+	border-bottom: 1px solid #E3E3E3 !important;
+}
+
+.iPage_testEnde .ip_comment {
+	order: 3;
+}
+
+.iPage_testEnde .ipCenter4 {
+	order: 4;
+	justify-content: space-between;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+/* Single- / Multiple-Choice Bilder */
+
+.page[max-width~="800px"].iPage_mcPic .ipcAnswerCont, .CFW_S_Idea[max-width~="800px"] .iPage_mcPic .ipcAnswerCont {
+	width: 100% !important;
+	margin-right: 0 !important;
+	max-width: unset;
+}
+
+.page[max-width~="800px"].iPage_mcPic.iPage_mcPicTxt .ipcAnswerInnerCont, .CFW_S_Idea[max-width~="800px"] .iPage_mcPic.iPage_mcPicTxt .ipcAnswerInnerCont {
+	width: 100%;
+}
+
+.page[max-width~="800px"].iPage_mcPic .scOptionPic, .CFW_S_Idea[max-width~="800px"] .scOptionPic,
+.page[max-width~="800px"].iPage_mcPic.vert .ipContainer2_2 .ipcAnswerCont .scOptionPic,
+.CFW_S_Idea[max-width~="800px"] .iPage_mcPic.vert .ipContainer2_2 .ipcAnswerCont .scOptionPic {
+	max-height: unset;
+}
+
+/* Entscheidung */
+
+.page[max-width~="800px"].iPage_dc .ipContainer2_2 .switchgroup,
+.CFW_S_Idea[max-width~="800px"] .iPage_dc .ipContainer2_2 .switchgroup, .CFW_S_Idea.phone .iPage_dc .ipContainer2_2 .switchgroup {
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.page[max-width~="800px"].iPage_dc .ipContainer2_2 .switchgroup .icAnswerText,
+.CFW_S_Idea[max-width~="800px"] .iPage_dc .ipContainer2_2 .switchgroup .icAnswerText, .CFW_S_Idea.phone .iPage_dc .ipContainer2_2 .switchgroup .icAnswerText {
+	order: 1 !important;
+	margin-bottom: 16px !important;
+}
+
+.page[max-width~="800px"].iPage_dc .ipContainer2_2 .switchgroup .icSwitch,
+.CFW_S_Idea[max-width~="800px"] .iPage_dc .ipContainer2_2 .switchgroup .icSwitch, .CFW_S_Idea.phone .iPage_dc .ipContainer2_2 .switchgroup .icSwitch {
+	order: 2 !important;
+}
+
+/* Drag & Drop - Text zu Text / Variante 0 */
+
+.page[max-width~="800px"].iPage_ddText0.iPage_ddText .ipRespoBox1, .CFW_S_Idea[max-width~="800px"] .iPage_ddText0.iPage_ddText .ipRespoBox1,
+.page[max-width~="800px"].iPage_ddText0.iPage_ddTextPic .ipContainer2_2_1, .CFW_S_Idea[max-width~="800px"] .iPage_ddText0.iPage_ddTextPic .ipContainer2_2_1,
+.page[max-width~="800px"].iPage_ddText0.iPage_ddTextToPic .ipContainer2_2, .CFW_S_Idea[max-width~="800px"] .iPage_ddText0.iPage_ddTextToPic .ipContainer2_2,
+.page[max-width~="800px"].iPage_ddPic .ipRespoBox4, .CFW_S_Idea[max-width~="800px"] .iPage_ddPic .ipRespoBox4 {
+	position: absolute;
+	z-index: 10000;
+	top: 0;
+	left: 0;
+	background-color: #ffffff !important;
+	border: 2px solid var(--akzentfarbe) !important;
+	max-height: 250px;
+	padding-top: 36px !important;
+	padding-bottom: 36px !important;
+}
+
+.CFW_S_Idea[max-width~="800px"] .iPage_ddText0.iPage_ddText.iPage_ddMulti .ipRespoBox1 {
+	height: 250px !important;
+}
+
+.page[max-width~="800px"].iPage_ddText0.iPage_ddText.solution .ipRespoBox1, .CFW_S_Idea[max-width~="800px"] .iPage_ddText0.iPage_ddText.solution .ipRespoBox1,
+.page[max-width~="800px"].iPage_ddText0.iPage_ddTextPic.solution .ipContainer2_2_1, .CFW_S_Idea[max-width~="800px"] .iPage_ddText0.iPage_ddTextPic.solution .ipContainer2_2_1,
+.page[max-width~="800px"].iPage_ddText0.iPage_ddTextToPic.solution .ipContainer2_2, .CFW_S_Idea[max-width~="800px"] .iPage_ddText0.iPage_ddTextToPic.solution .ipContainer2_2,
+.page[max-width~="800px"].iPage_ddPic.solution .ipRespoBox4, .CFW_S_Idea[max-width~="800px"] .iPage_ddPic.solution .ipRespoBox4,
+.page[max-width~="800px"].iPage_ddText0.iPage_ddText.myAnswer .ipRespoBox1, .CFW_S_Idea[max-width~="800px"] .iPage_ddText0.iPage_ddText.myAnswer .ipRespoBox1,
+.page[max-width~="800px"].iPage_ddText0.iPage_ddTextPic.myAnswer .ipContainer2_2_1, .CFW_S_Idea[max-width~="800px"] .iPage_ddText0.iPage_ddTextPic.myAnswer .ipContainer2_2_1,
+.page[max-width~="800px"].iPage_ddText0.iPage_ddTextToPic.myAnswer .ipContainer2_2, .CFW_S_Idea[max-width~="800px"] .iPage_ddText0.iPage_ddTextToPic.myAnswer .ipContainer2_2,
+.page[max-width~="800px"].iPage_ddPic.myAnswer .ipRespoBox4, .CFW_S_Idea[max-width~="800px"] .iPage_ddPic.myAnswer .ipRespoBox4 {
+	display: none !important;
+}
+
+.page[max-width~="800px"].iPage_ddText0.iPage_ddTextPic .ipRespoBox1, .CFW_S_Idea[max-width~="800px"] .iPage_ddText0.iPage_ddTextPic .ipRespoBox1 {
+	position: relative;
+}
+
+.page[max-width~="800px"].iPage_ddText0 .icmDrag, .CFW_S_Idea[max-width~="800px"] .iPage_ddText0 .icmDrag  {
+	justify-content: center;
+}
+
+.iPage_ddText0 .icmDrag {
+	padding-right: 35px !important;
+}
+
+.iPage_ddText0 .icmDrag.dropped:after, .icmDragPic.multi.dropped:after {
+	content: url(antwort-loeschen-weiss.svg);
+	position: absolute;
+	right: 10px;
+	cursor: pointer;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.icmDrop.dropped {
+	height: auto !important;
+}
+
+.iPage_ddText0 .num {
+	display: none !important;
+}
+
+.page[max-width~="800px"].iPage_ddText0 .num, .CFW_S_Idea[max-width~="800px"] .iPage_ddText0 .num {
+	display: inline-block !important;
+	top: 100% !important;
+	left: 100% !important;
+	transform: translate(-100%, -100%);
+	width: 45px;
+	text-align: left;
+	position: absolute;
+}
+
+/* Drag & Drop - Text zu Text ohne Bild */
+
+.iPage_ddText .ipRespoBox1 {
+	background-color: var(--akzentfarbe) !important;
+	overflow: auto !important;
+}
+
+.iPage_ddLT .ipRespoBox1 {
+	background-color: var(--akzentfarbe) !important;
+	overflow: visible !important;
+}
+
+/* Drag & Drop - Text zu Bild */
+
+.page[max-width~="800px"].iPage_ddText0.iPage_ddTextToPic .ipRespoBox1, .CFW_S_Idea[max-width~="800px"] .iPage_ddText0.iPage_ddTextToPic .ipRespoBox1 {
+	order: 2 !important;
+	max-height: unset;
+}
+
+.page[max-width~="800px"].iPage_ddText0.iPage_ddTextToPic .ipRespoBox2, .CFW_S_Idea[max-width~="800px"] .iPage_ddText0.iPage_ddTextToPic .ipRespoBox2 {
+	order: 1 !important;
+}
+
+/* Drag & Drop - Bild zu Text */
+
+.iPage_ddPic .cell_inline {
+	margin: 2% !important;
+	background-color: #EBEBEB !important;
+	width: 45% !important;
+/*	max-width: 45% !important; */
+	overflow: visible !important;
+}
+
+.iPage_ddPic .ipRespoBox3 {
+	order: 2;
+}
+.iPage_ddPic .ipRespoBox4 {
+	order: 3;
+}
+
+/* .iPage_ddPic .cell_inline .icmDragPic {
+	width: 100% !important;
+} */
+
+.iPage_ddPic .icmPicDrop {
+	padding: 3% !important;
+	overflow: visible !important;
+	background-color: var(--akzentfarbe) !important;
+}
+
+.iPage_ddPic .icmPicDrop:last-child {
+	margin: 0 !important;
+}
+
+.icmDragPic.dropped, .icmDragPic.droppedDrag,
+.page[max-width~="800px"].iPage_ddPic .icmDragPic.dropped, .CFW_S_Idea[max-width~="800px"] .iPage_ddPic .icmDragPic.dropped {
+	width: 21% !important;
+	padding-bottom: 21% !important;
+	height: 0 !important;
+	position: relative;
+	margin: 5px;
+	box-sizing: content-box;
+}
+
+.icmDragPic.multi.dropped, .icmDragPic.multi.correct, .icmDragPic.multi.incorrect {
+	width: 21% !important;
+	height: auto !important;
+	padding-right: 40px !important;
+}
+
+.icmDragPic.multi.correct, .icmDragPic.multi.incorrect {
+	padding-right: 12px !important;
+}
+
+.icmDragPic.dropped img {
+	object-fit: cover;
+	position: absolute;
+	top: 0;
+}
+
+.icmDragPic.multi.dropped img {
+	position: relative;
+}
+
+.page[max-width~="800px"].iPage_ddPic .ipContainer2_2, .CFW_S_Idea[max-width~="800px"] .iPage_ddPic .ipContainer2_2 {
+	width: 116% !important;
+	margin-left: -8%;
+	height: auto !important;
+}
+.page[max-width~="800px"].iPage_ddPic .ipContainer2_2 .ipRespoBox3, .CFW_S_Idea[max-width~="800px"] .iPage_ddPic .ipContainer2_2 .ipRespoBox3 {
+	height: auto !important;
+	width: 100% !important;
+	flex-direction: column;
+}
+
+.page[max-width~="800px"].iPage_ddPic .ipRespoBox4, .CFW_S_Idea[max-width~="800px"] .iPage_ddPic .ipRespoBox4,
+.page[max-width~="800px"].iPage_ddPic.plus3targets .ipCenter .ipRespoBox4, .CFW_S_Idea[max-width~="800px"] .iPage_ddPic.plus3targets .ipCenter .ipRespoBox4 {
+	height: 30% !important;
+	justify-content: center;
+	text-align: center;
+	padding: 3% !important;
+}
+
+.page[max-width~="800px"].iPage_ddPic .icmDragPic, .CFW_S_Idea[max-width~="800px"] .iPage_ddPic .icmDragPic {
+	height: 100% !important;
+}
+
+.page[max-width~="800px"].iPage_ddPic .icmPicDrop, .CFW_S_Idea[max-width~="800px"] .iPage_ddPic .icmPicDrop {
+	height: 250px !important;
+	padding: 3%;
+	margin-bottom: 15px !important;
+}
+
+.page[max-width~="800px"].iPage_ddPic .icmPicDrop div,  .CFW_S_Idea[max-width~="800px"] .iPage_ddPic .icmPicDrop div {
+	position: initial;
+	margin-top: -5px !important;
+	margin-bottom: 20px !important;
+	color: #ffffff !important;
+}
+
+.iPage_ddPic.plus3targets .ipCenter {
+	flex-direction: column;
+	overflow-y: auto !important;
+	display: inline-block !important;
+}
+
+.iPage_ddPic.plus3targets .ipCenter .ipRespoBox2, .iPage_ddPic.plus3targets .ipCenter .ipRespoBox3, .iPage_ddPic.plus3targets .ipCenter .ipRespoBox4 {
+	width: 100% !important;
+	height: auto !important;
+	padding-bottom: 0 !important;
+}
+
+.page[max-width~="800px"].iPage_ddPic.plus3targets .ipCenter .ipRespoBox2,  .CFW_S_Idea[max-width~="800px"] .iPage_ddPic.plus3targets .ipCenter .ipRespoBox2 {
+	padding-bottom: 7.5% !important;
+}
+
+.iPage_ddPic.plus3targets .ipCenter .ipRespoBox3 {
+	flex-direction: row;
+	padding-left: min(54px, 7.5%) !important;
+	padding-right: min(54px, 7.5%) !important;
+	overflow: visible !important;
+}
+
+.iPage_ddPic.plus3targets .ipCenter .ipRespoBox3:after {
+	content: none !important;
+}
+
+.iPage_ddPic.plus3targets .ipCenter .ipRespoBox3 > div:first-child {
+	display: none;
+}
+
+.iPage_ddPic.plus3targets .icmDragPic, .iPage_ddPic.plus3targets .cell_inline {
+	height: 12vH;
+}
+
+.iPage_ddPic.plus3targets .cell_inline {
+	height: 12vH;
+	width: auto !important;
+	margin: 0 1% 0 0 !important;
+}
+
+.iPage_ddPic.plus3targets .cell_inline:last-child {
+	margin: 0 !important;
+}
+
+.iPage_ddPic.plus3targets .icmPicDrop {
+	height: 16vH !important;
+	min-height: 200px;
+	margin: 0 1% 0 0 !important;
+}
+
+.iPage_ddPic.plus3targets .icmPicDrop:last-child {
+	margin-right: 0 !important;
+}
+
+.iPage_ddPic.plus3targets .icmPicDrop div {
+	top: 102%;
+	color: #707070 !important;
+}
+
+.iPage_ddPic.plus3targets .ipCenter .ipRespoBox4 {
+	display: inline-block !important;
+	padding-bottom: 7.5% !important;
+}
+
+/* .iPage_ddPic.plus3targets .cell_inline.dropped {
+	display: inline-block !important;
+	align-self: stretch;
+	height: auto !important;
+} */
+
+.page[min-width~="801px"].iPage_ddPic.plus3targets .btCheck, .CFW_S_Idea[min-width~="801px"] .iPage_ddPic.plus3targets .btCheck {
+	margin-top: 50px;
+	width: max-content !important;
+	display: block !important;
+}
+
+/* Reihenfolge */
+
+.iPage_sortlist .ipContainer2_2 {
+	position: relative;
+	overflow: visible !important;
+}
+
+.iPage_sortlist.noPic .ipContainer2_2 {
+	position: absolute;
+	left: 50%;
+	top: 0;
+	margin: 7.5% !important;
+	width: 34% !important;
+	height: 80%;
+}
+
+.iPage_sortlist.noPic .ipRespoBox2 {
+	width: 50% !important;
+}
+
+.iPage_sortlist.noPic .ip_title, .iPage_sortlist.noPic .ip_instruction {
+	max-width: unset;
+}
+
+.page[max-width~="800px"].iPage_sortlist.noPic .ipContainer2_2, .CFW_S_Idea[max-width~="800px"] .iPage_sortlist.noPic .ipContainer2_2 {
+	position: relative;
+	left: 0;
+	margin: 0 !important;
+	margin-bottom: 18px !important;
+	width: 100% !important;
+	height: auto;
+}
+
+	/* MC-Bild */
+
+.iPage_mcPic .ipContainer2_2 {
+	position: relative;
+	overflow: visible !important;
+}
+
+/* Hot-Spot Quiz */
+
+.iPage_HotSpot1 .ipRespoBox1 {
+	order: 2;
+	width: 67% !important;
+}
+
+.iPage_HotSpot1 .ipRespoBox2 {
+	order: 1;
+	width: 33% !important;
+	align-items: flex-start;
+}
+
+/* *** Layout-Varianten *** */
+
+.picLeft .ipRespoBox1, .picOneThirdLeft .ipRespoBox1 {
+	order: 1;
+}
+.picLeft .ipRespoBox2, .picOneThirdLeft .ipRespoBox2 {
+	order: 2;
+}
+
+.picRight .ipRespoBox1, .picOneThirdRight .ipRespoBox1 {
+	order: 2;
+}
+.picRight .ipRespoBox2, .picOneThirdRight .ipRespoBox2 {
+	order: 1;
+}
+
+.noPic .ipRespoBox1 {
+	display: none !important;
+}
+.noPic .ipRespoBox2, .noPic .iPage_ddText0.iPage_ddTextPic .ipRespoBox2 {
+	width: 100% !important;
+}
+
+.noPic .ip_title, .noPic .ip_instruction {
+	max-width: 50%;
+}
+
+/* für knowtion-Pageeditor*/
+.noPic  .ip_title .ip_title, .noPic .ip_instruction .ip_instruction {
+	max-width: 100%;
+}
+
+.noPic.iPage_mc .ipContainer2_2, .noPic.iPage_dc .ipContainer2_2 {
+	display: inline-flex !important;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	overflow: visible !important;
+}
+.noPic.iPage_mc .ipContainer2_2 .scOption,
+.noPic.iPage_mc .ipContainer2_2 .mcOption,
+.noPic.iPage_dc .ipContainer2_2 .switchgroup {
+	max-width: calc(50% - 30px);
+}
+
+/* für knowtion-Pageeditor*/
+.noPic.iPage_dc .ipContainer2_2 .switchgroup .switchgroup {
+	max-width: 100%;
+}
+
+.noText .ipRespoBox2 {
+	display: none !important;
+}
+.noText .ipRespoBox1 {
+	width: 100% !important;
+}
+
+.picOneThirdRight .ipRespoBox1, .picOneThirdLeft .ipRespoBox1  {
+	width: 33% !important;
+}
+.picOneThirdRight .ipRespoBox2, .picOneThirdLeft .ipRespoBox2  {
+	width: 67% !important;
+/*	padding: 7% 15% 7% 15% !important; */
+}
+/* für knowtion-Pageeditor*/
+.picOneThirdRight .selection-container .ipRespoBox1, .picOneThirdLeft .selection-container .ipRespoBox1 {
+	width: 100% !important;
+}
+
+.page[max-width~="800px"].picOneThirdRight .ipRespoBox2, .CFW_S_Idea[max-width~="800px"] .picOneThirdRight .ipRespoBox2,
+.page[max-width~="800px"].picOneThirdLeft .ipRespoBox2, .CFW_S_Idea[max-width~="800px"] .picOneThirdLeft .ipRespoBox2 {
+	padding: 7.5% 7.5% 7.5% 7.5% !important;
+	padding-left: min(80px, 7.5%) !important;
+	padding-right: min(80px, 7.5%) !important;
+}
+
+.textOverlayLeft .ipRespoBox1, .textOverlayRight .ipRespoBox1 {
+	width: 100% !important;
+}
+
+.textOverlayLeft .ipRespoBox2, .textOverlayRight .ipRespoBox2 {
+	position: absolute  !important;
+	z-index: 10000;
+	background-color: #ffffff !important;
+	margin-left: 5%;
+	margin-top: 5%;
+	width: 40% !important;
+	padding: 2% !important;
+	max-height: 75%;
+	top: 0 !important;
+}
+
+.textOverlayRight .ipRespoBox2 {
+	margin-left: 55%;
+}
+
+.textOverlayLeft .ip_title, .textOverlayRight .ip_title {
+	margin-bottom: 30px !important;
+}
+
+.textOverlayLeft br, .textOverlayRight br {
+	display: none !important;
+}
+
+.slideCenter.page, .slideCenter.currentPage {
+	justify-content: center;
+}
+
+.slideCenter .ipCenter {
+	flex-direction: column;
+	flex-grow: 0;
+	flex-basis: initial;
+	width: 50% !important;
+	position: relative;
+}
+
+.slideCenter .ipRespoBox1, .slideCenter .ipRespoBox2 {
+	width: 100% !important;
+}
+
+.slideCenter .ipRespoBox2 {
+	height: auto !important;
+	min-height: 25%;
+	display: inline-flex !important;
+	flex-direction: column;
+	justify-content: flex-end;
+	padding: 0 !important;
+	order: 1;
+	padding-top: 20px !important;
+/*	flex-grow: 1;
+	flex-shrink: 0; */
+}
+
+.slideCenter .ipRespoBox1 {
+	height: 63% !important;
+	order: 2;
+	top: 7%;
+/*	flex-grow: 0;
+	flex-shrink: 1; */
+}
+
+.iPage_slideshow.slideCenter .ipRespoBox1 {
+	top: 30%;
+}
+
+.slideCenter .ip_maintext, .slideCenter br {
+	display: none !important;
+}
+
+.slideCenter .ip_title {
+	margin-bottom: 20px !important;
+}
+
+.iPage_slider.picLeft .ipRespoBox2, .iPage_slider.picRight .ipRespoBox2 {
+	position: relative !important;
+}
+.iPage_slider.noText .sliderContainer, .iPage_slider.picLeft .sliderContainer, .iPage_slider.picRight .sliderContainer {
+	display: none !important;
+}
+
+.iPage_slider.picLeft .ipRespoBox2, .iPage_slider.picRight .ipRespoBox2 {
+	left: 0 !important;
+}
+
+.iPage_flipcards .ipRespoBox2 > div:first-child {
+	display: none;
+}
+
+.iPage_flipcards .ipRespoBox2 {
+	justify-content: center;
+	flex-wrap: wrap;
+	padding-top: 0 !important;
+}
+
+.iPage_mcPic.horzWrap .ipContainer2_2 {
+	flex-wrap: wrap !important;
+}
+.iPage_mcPic.horiz .ipContainer2_2 {
+	flex-wrap: nowrap !important;
+}
+.iPage_mcPic.horiz .ipContainer2_2 .ipcAnswerCont:last-child {
+	margin-right: 0 !important;
+}
+
+.iPage_mcPic.vert .ipRespoBox2 {
+	width: 50% !important;
+}
+
+.iPage_mcPic.vert .ipContainer2_2 {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 50% !important;
+	height: 100%;
+	flex-wrap: wrap;
+	padding: 7.5% !important;
+	align-content: flex-start;
+	overflow-y: auto !important;
+}
+
+.iPage_mcPic.vert .ipContainer2_2 .ipcAnswerCont .scOptionPic {
+	max-height: 13vH;
+}
+
+.iPage_mcPic.vert.noPic .ip_title, .iPage_mcPic.vert.noPic .ip_instruction {
+	max-width: unset;
+}
+
+.page[max-width~="800px"].iPage_mcPic .ipContainer2_1, .CFW_S_Idea[max-width~="800px"] .iPage_mcPic .ipContainer2_1 {
+	margin-bottom: 120px;
+}
+
+.page[max-width~="800px"].iPage_mcPic .ipContainer2_2, .CFW_S_Idea[max-width~="800px"] .iPage_mcPic .ipContainer2_2 {
+	position: relative;
+	left: 0;
+	width: 100% !important;
+	height: auto;
+	padding: 0 !important;
+	flex-direction: column;
+}
+
+/* ******* Tablet Hochkant ******* */
+
+/* *** Phone-Layout *** */
+
+.page[max-width~="800px"].noPic .ip_title, .CFW_S_Idea[max-width~="800px"] .noPic .ip_title,
+.page[max-width~="800px"].noPic .ip_instruction, .CFW_S_Idea[max-width~="800px"] .noPic .ip_instruction {
+	max-width: 100%;
+}
+
+.page[max-width~="800px"] .ipCenter, .CFW_S_Idea[max-width~="800px"] .currentPage .ipCenter {
+/*	display: block !important;*/
+	overflow-y: auto !important;
+	flex-direction: column;
+	flex-flow: wrap;
+	align-content: flex-start;
+}
+
+.page[max-width~="800px"] .ipRespoBox1, .CFW_S_Idea[max-width~="800px"] .ipRespoBox1,
+.page[max-width~="800px"] .ipRespoBox2, .CFW_S_Idea[max-width~="800px"] .ipRespoBox2,
+.page[max-width~="800px"] .ipRespoBox3, .CFW_S_Idea[max-width~="800px"] .ipRespoBox3,
+.page[max-width~="800px"] .ipRespoBox4, .CFW_S_Idea[max-width~="800px"] .ipRespoBox4 {
+	height: auto !important;
+	overflow: hidden !important;
+	width: 100% !important;
+}
+
+.page[max-width~="800px"] .ipRespoBox1, .CFW_S_Idea[max-width~="800px"] .ipRespoBox1,
+.page[max-width~="800px"].picRight .ipRespoBox1, .CFW_S_Idea[max-width~="800px"] .picRight .ipRespoBox1 {
+	order: 1;
+	justify-content: flex-start;
+	max-height: 50%;
+}
+
+.page[max-width~="800px"] .ipRespoBox2, .CFW_S_Idea[max-width~="800px"] .ipRespoBox2,
+.page[max-width~="800px"].picRight .ipRespoBox2, .CFW_S_Idea[max-width~="800px"] .picRight .ipRespoBox2 {
+	order: 2;
+}
+
+.page[max-width~="800px"].noPic.iPage_mc .ipContainer2_2 .scOption,
+.page[max-width~="800px"].noPic.iPage_mc .ipContainer2_2 .mcOption,
+.page[max-width~="800px"].noPic.iPage_dc .ipContainer2_2 .switchgroup,
+.CFW_S_Idea[max-width~="800px"] .noPic.iPage_mc .ipContainer2_2 .scOption, .CFW_S_Idea.phone .noPic.iPage_mc .ipContainer2_2 .scOption,
+.CFW_S_Idea[max-width~="800px"] .noPic.iPage_mc .ipContainer2_2 .mcOption, .CFW_S_Idea.phone .noPic.iPage_mc .ipContainer2_2 .mcOption,
+.CFW_S_Idea[max-width~="800px"] .noPic.iPage_dc .ipContainer2_2 .switchgroup, .CFW_S_Idea.phone .noPic.iPage_dc .ipContainer2_2 .switchgroup {
+	max-width: calc(100% - 9px);
+}
+
+.page[max-width~="800px"].noText .ipRespoBox1, .CFW_S_Idea[max-width~="800px"] .noText .ipRespoBox1 {
+	height: 100% !important;
+	max-height: unset;
+}
+
+.page[max-width~="800px"].textOverlayLeft .ipRespoBox1, .CFW_S_Idea[max-width~="800px"] .textOverlayLeft .ipRespoBox1,
+.page[max-width~="800px"].textOverlayRight .ipRespoBox1, .CFW_S_Idea[max-width~="800px"] .textOverlayRight .ipRespoBox1,
+.page[max-width~="800px"].picLeft.iPage_slider .ipRespoBox1, .CFW_S_Idea[max-width~="800px"] .picLeft.iPage_slider .ipRespoBox1,
+.page[max-width~="800px"].picRight.iPage_slider .ipRespoBox1, .CFW_S_Idea[max-width~="800px"] .picRight.iPage_slider .ipRespoBox1 {
+	height: 33% !important;
+}
+
+.page[max-width~="800px"].textOverlayLeft .ipRespoBox2, .CFW_S_Idea[max-width~="800px"] .textOverlayLeft .ipRespoBox2,
+.page[max-width~="800px"].textOverlayRight .ipRespoBox2, .CFW_S_Idea[max-width~="800px"] .textOverlayRight .ipRespoBox2 {
+/*	position: relative;
+	left: 0; */
+	top: 33% !important;
+	padding: 7.5% !important;
+	max-height: unset;
+	margin: 0 !important;
+}
+
+.page[max-width~="800px"].slideCenter .ipCenter, .CFW_S_Idea[max-width~="800px"] .slideCenter .ipCenter {
+	flex-flow: column;
+	width: 100% !important;
+}
+
+.page[max-width~="800px"].slideCenter.iPage_slider .ipRespoBox1, .CFW_S_Idea[max-width~="800px"] .slideCenter.iPage_slider .ipRespoBox1 {
+	order: 2;
+	height: 85% !important;
+	max-height: unset;
+	flex-grow: 0;
+	flex-shrink: 1;
+	top: 15%
+}
+
+.page[max-width~="800px"].slideCenter.iPage_slider .ipRespoBox2, .CFW_S_Idea[max-width~="800px"] .slideCenter.iPage_slider .ipRespoBox2 {
+	order: 1;
+	padding: 7.5% !important;
+	justify-content: flex-start;
+	flex-grow: 1;
+	flex-shrink: 0;
+	min-height: unset;
+}
+
+.page[max-width~="800px"].slideCenter .ip_title, .CFW_S_Idea[max-width~="800px"] .slideCenter .ip_title {
+	margin-bottom: 0px !important;
+}
+
+/* Universal */
+
+.iPage_universal .ipCenter {
+	flex-wrap: wrap;
+	align-content: flex-start;
+}
+
+/* .iPage_universal .ipRespoBox1, .iPage_universal .ipRespoBox2, .iPage_universal .ipRespoBox3, .iPage_universal .ipRespoBox4 {
+	display: inline-block !important;
+} */
+
+/* 1 Element */
+
+.iPage_universal.respoLayout1 .ipRespoBox1 {
+	width: 100% !important;
+}
+
+/* 2 Elemente */
+
+.iPage_universal.respoLayout1_2_1 .ipRespoBox1, .iPage_universal.respoLayout1_2_1 .ipRespoBox2,
+.page[min-width~="960px"].iPage_universal.respoLayout1_2_1 .page.ipRespoBox1, .page[min-width~="960px"].iPage_universal.respoLayout1_2_1 .ipRespoBox2,
+.page[max-width~="959px"].iPage_universal.respoLayout2_2_1 .ipRespoBox1, .page[max-width~="959px"].iPage_universal.respoLayout2_2_1 .ipRespoBox2,
+.CFW_S_Idea[max-width~="959px"] .iPage_universal.respoLayout2_2_1 .ipRespoBox1, .CFW_S_Idea[max-width~="959px"] .iPage_universal.respoLayout2_2_1 .ipRespoBox2 {
+	width: 50% !important;
+	order: 0;
+}
+
+/*.page[min-width~="960px"].iPage_universal.respoLayout1_2_2 .page.ipRespoBox1, .page[min-width~="960px"].iPage_universal.respoLayout1_2_2 .ipRespoBox2,*/
+.iPage_universal.respoLayout1_2_2 .ipRespoBox1, .iPage_universal.respoLayout1_2_2 .ipRespoBox2,
+.page[max-width~="959px"].iPage_universal.respoLayout2_2_2 .ipRespoBox1, .page[max-width~="959px"].iPage_universal.respoLayout2_2_2 .ipRespoBox2,
+.CFW_S_Idea[max-width~="959px"] .iPage_universal.respoLayout2_2_2 .ipRespoBox1, .CFW_S_Idea[max-width~="959px"] .iPage_universal.respoLayout2_2_2 .ipRespoBox2 {
+	width: 100% !important;
+	order: 0;
+}
+
+/* 3 Elemente */
+
+.iPage_universal.respoLayout1_3_1 .ipRespoBox1, .iPage_universal.respoLayout1_3_1 .ipRespoBox2, .iPage_universal.respoLayout1_3_1 .ipRespoBox3,
+.page[min-width~="960px"].iPage_universal.respoLayout1_3_1 .ipRespoBox1, .page[min-width~="960px"].iPage_universal.respoLayout1_3_1 .ipRespoBox2,
+.page[min-width~="960px"].iPage_universal.respoLayout1_3_1 .ipRespoBox3 {
+	width: 33.3% !important;
+	order: 0;
+}
+
+.iPage_universal.respoLayout1_3_2 .ipRespoBox1, .iPage_universal.respoLayout1_3_2 .ipRespoBox2, .iPage_universal.respoLayout1_3_3 .ipRespoBox2, .iPage_universal.respoLayout1_3_3 .ipRespoBox3,
+.page[min-width~="960px"].iPage_universal.respoLayout1_3_2 .ipRespoBox1, .page[min-width~="960px"].iPage_universal.respoLayout1_3_2 .ipRespoBox2,
+.page[min-width~="960px"].iPage_universal.respoLayout1_3_3 .ipRespoBox2, .page[min-width~="960px"].iPage_universal.respoLayout1_3_3 .ipRespoBox3,
+.page[max-width~="959px"].iPage_universal.respoLayout2_3_1 .ipRespoBox1, .page[max-width~="959px"].iPage_universal.respoLayout2_3_1 .ipRespoBox2,
+.page[max-width~="959px"].iPage_universal.respoLayout2_3_2 .ipRespoBox2, .page[max-width~="959px"].iPage_universal.respoLayout2_3_2 .ipRespoBox3,
+.CFW_S_Idea[max-width~="959px"] .iPage_universal.respoLayout2_3_1 .ipRespoBox1, .CFW_S_Idea[max-width~="959px"] .iPage_universal.respoLayout2_3_1 .ipRespoBox2,
+.CFW_S_Idea[max-width~="959px"] .iPage_universal.respoLayout2_3_2 .ipRespoBox2, .CFW_S_Idea[max-width~="959px"] .iPage_universal.respoLayout2_3_2 .ipRespoBox3 {
+	width: 50% !important;
+	order: 0;
+}
+
+.iPage_universal.respoLayout1_3_2 .ipRespoBox3, .iPage_universal.respoLayout1_3_3 .ipRespoBox1,
+.iPage_universal.respoLayout1_3_4 .ipRespoBox1, .iPage_universal.respoLayout1_3_4 .ipRespoBox2, .iPage_universal.respoLayout1_3_4 .ipRespoBox3, .iPage_universal.respoLayout1_3_4 .ipRespoBox4,
+.page[min-width~="960px"].iPage_universal.respoLayout1_3_2 .ipRespoBox3, .page[min-width~="960px"].iPage_universal.respoLayout1_3_3 .ipRespoBox1,
+.CFW_S_Idea[max-width~="959px"] .iPage_universal.respoLayout2_3_1 .ipRespoBox3, .CFW_S_Idea[max-width~="959px"] .iPage_universal.respoLayout2_3_2 .ipRespoBox1,
+.CFW_S_Idea[max-width~="959px"] .iPage_universal.respoLayout2_3_3 .ipRespoBox1, .CFW_S_Idea[max-width~="959px"] .iPage_universal.respoLayout2_3_3 .ipRespoBox2,
+.CFW_S_Idea[max-width~="959px"] .iPage_universal.respoLayout2_3_3 .ipRespoBox3,
+.page[max-width~="959px"].iPage_universal.respoLayout2_3_1 .ipRespoBox3, .page[max-width~="959px"].iPage_universal.respoLayout2_3_2 .ipRespoBox1,
+.page[max-width~="959px"].iPage_universal.respoLayout2_3_3 .ipRespoBox1, .page[max-width~="959px"].iPage_universal.respoLayout2_3_3 .ipRespoBox2,
+.page[max-width~="959px"].iPage_universal.respoLayout2_3_3 .ipRespoBox3,
+.CFW_S_Idea[max-width~="959px"] .iPage_universal.respoLayout2_3_1 .ipRespoBox3, .CFW_S_Idea[max-width~="959px"] .iPage_universal.respoLayout2_3_2 .ipRespoBox1,
+.CFW_S_Idea[max-width~="959px"] .iPage_universal.respoLayout2_3_3 .ipRespoBox1, .CFW_S_Idea[max-width~="959px"] .iPage_universal.respoLayout2_3_3 .ipRespoBox2,
+.CFW_S_Idea[max-width~="959px"] .iPage_universal.respoLayout2_3_3 .ipRespoBox3 {
+	width: 100% !important;
+	order: 0;
+}
+
+/* 4 Elemente */
+
+.iPage_universal.respoLayout1_4_1 .ipRespoBox1, .iPage_universal.respoLayout1_4_1 .ipRespoBox2, .iPage_universal.respoLayout1_4_1 .ipRespoBox3, .iPage_universal.respoLayout1_4_1 .ipRespoBox4,
+.page[min-width~="960px"].iPage_universal.respoLayout1_4_1 .ipRespoBox1, .page[min-width~="960px"].iPage_universal.respoLayout1_4_1 .ipRespoBox2,
+.page[min-width~="960px"].iPage_universal.respoLayout1_4_1 .ipRespoBox3, .page[min-width~="960px"].iPage_universal.respoLayout1_4_1 .ipRespoBox4 {
+	width: 25% !important;
+	order: 0;
+}
+
+.iPage_universal.respoLayout1_4_2 .ipRespoBox1, .iPage_universal.respoLayout1_4_2 .ipRespoBox2, .iPage_universal.respoLayout1_4_2 .ipRespoBox3, .iPage_universal.respoLayout1_4_2 .ipRespoBox4,
+.page[min-width~="960px"].iPage_universal.respoLayout1_4_2 .ipRespoBox1, .page[min-width~="960px"].iPage_universal.respoLayout1_4_2 .ipRespoBox2,
+.page[min-width~="960px"].iPage_universal.respoLayout1_4_2 .ipRespoBox3, .page[min-width~="960px"].iPage_universal.respoLayout1_4_2 .ipRespoBox4,
+.page[max-width~="959px"].iPage_universal.respoLayout2_4_1 .ipRespoBox1, .page[max-width~="959px"].iPage_universal.respoLayout2_4_1 .ipRespoBox2,
+.page[max-width~="959px"].iPage_universal.respoLayout2_4_1 .ipRespoBox3, .page[max-width~="959px"].iPage_universal.respoLayout2_4_1 .ipRespoBox4,
+.CFW_S_Idea[max-width~="959px"] .iPage_universal.respoLayout2_4_1 .ipRespoBox1, .CFW_S_Idea[max-width~="959px"] .iPage_universal.respoLayout2_4_1 .ipRespoBox2,
+.CFW_S_Idea[max-width~="959px"] .iPage_universal.respoLayout2_4_1 .ipRespoBox3, .CFW_S_Idea[max-width~="959px"] .iPage_universal.respoLayout2_4_1 .ipRespoBox4 {
+	width: 50% !important;
+	order: 0;
+}
+
+.iPage_universal.respoLayout1_4_3 .ipRespoBox1, .iPage_universal.respoLayout1_4_3 .ipRespoBox2, .iPage_universal.respoLayout1_4_4 .ipRespoBox3, .iPage_universal.respoLayout1_4_4 .ipRespoBox4,
+.page[max-width~="959px"].iPage_universal.respoLayout2_4_2 .ipRespoBox1, .page[max-width~="959px"].iPage_universal.respoLayout2_4_2 .ipRespoBox2,
+.page[max-width~="959px"].iPage_universal.respoLayout2_4_3 .ipRespoBox2, .page[max-width~="959px"].iPage_universal.respoLayout2_4_3 .ipRespoBox3,
+.page[max-width~="959px"].iPage_universal.respoLayout2_4_4 .ipRespoBox3, .page[max-width~="959px"].iPage_universal.respoLayout2_4_4 .ipRespoBox4,
+.CFW_S_Idea[max-width~="959px"] .iPage_universal.respoLayout2_4_2 .ipRespoBox1, .CFW_S_Idea[max-width~="959px"] .iPage_universal.respoLayout2_4_2 .ipRespoBox2,
+.CFW_S_Idea[max-width~="959px"] .iPage_universal.respoLayout2_4_3 .ipRespoBox2, .CFW_S_Idea[max-width~="959px"] .iPage_universal.respoLayout2_4_3 .ipRespoBox3,
+.CFW_S_Idea[max-width~="959px"] .iPage_universal.respoLayout2_4_4 .ipRespoBox3, .CFW_S_Idea[max-width~="959px"] .iPage_universal.respoLayout2_4_4 .ipRespoBox4 {
+	width: 50% !important;
+	order: 0;
+}
+
+.iPage_universal.respoLayout1_4_3 .ipRespoBox3, .iPage_universal.respoLayout1_4_3 .ipRespoBox4, .iPage_universal.respoLayout1_4_4 .ipRespoBox1, .iPage_universal.respoLayout1_4_4 .ipRespoBox2,
+.iPage_universal.respoLayout1_4_5 .ipRespoBox1, .iPage_universal.respoLayout1_4_5 .ipRespoBox2, .iPage_universal.respoLayout1_4_5 .ipRespoBox3, .iPage_universal.respoLayout1_4_5 .ipRespoBox4,
+.page[max-width~="959px"].iPage_universal.respoLayout2_4_2 .ipRespoBox3, .page[max-width~="959px"].iPage_universal.respoLayout2_4_2 .ipRespoBox4,
+.page[max-width~="959px"].iPage_universal.respoLayout2_4_3 .ipRespoBox1, .page[max-width~="959px"].iPage_universal.respoLayout2_4_3 .ipRespoBox4,
+.page[max-width~="959px"].iPage_universal.respoLayout2_4_4 .ipRespoBox1, .page[max-width~="959px"].iPage_universal.respoLayout2_4_4 .ipRespoBox2,
+.page[max-width~="959px"].iPage_universal.respoLayout2_4_5 .ipRespoBox1, .page[max-width~="959px"].iPage_universal.respoLayout2_4_5 .ipRespoBox2,
+.page[max-width~="959px"].iPage_universal.respoLayout2_4_5 .ipRespoBox3, .page[max-width~="959px"].iPage_universal.respoLayout2_4_5 .ipRespoBox4,
+.CFW_S_Idea[max-width~="959px"] .iPage_universal.respoLayout2_4_2 .ipRespoBox3, .CFW_S_Idea[max-width~="959px"] .iPage_universal.respoLayout2_4_2 .ipRespoBox4,
+.CFW_S_Idea[max-width~="959px"] .iPage_universal.respoLayout2_4_3 .ipRespoBox1, .CFW_S_Idea[max-width~="959px"] .iPage_universal.respoLayout2_4_3 .ipRespoBox4,
+.CFW_S_Idea[max-width~="959px"] .iPage_universal.respoLayout2_4_4 .ipRespoBox1, .CFW_S_Idea[max-width~="959px"] .iPage_universal.respoLayout2_4_4 .ipRespoBox2,
+.CFW_S_Idea[max-width~="959px"] .iPage_universal.respoLayout2_4_5 .ipRespoBox1, .CFW_S_Idea[max-width~="959px"] .iPage_universal.respoLayout2_4_5 .ipRespoBox2,
+.CFW_S_Idea[max-width~="959px"] .iPage_universal.respoLayout2_4_5 .ipRespoBox3, .CFW_S_Idea[max-width~="959px"] .iPage_universal.respoLayout2_4_5 .ipRespoBox4 {
+	width: 100% !important;
+	order: 0;
+}
+
+/* 1-4 Elemente - Phone */
+
+.page[max-width~="720px"].iPage_universal.respoLayout3_4_1 .ipRespoBox1, .page[max-width~="720px"].iPage_universal.respoLayout3_4_1 .ipRespoBox2,
+.page[max-width~="720px"].iPage_universal.respoLayout3_4_1 .ipRespoBox3, .page[max-width~="720px"].iPage_universal.respoLayout3_4_1 .ipRespoBox4,
+.CFW_S_Idea[max-width~="720px"] .iPage_universal.respoLayout3_4_1 .ipRespoBox1, .CFW_S_Idea[max-width~="720px"] .iPage_universal.respoLayout3_4_1 .ipRespoBox2,
+.CFW_S_Idea[max-width~="720px"] .iPage_universal.respoLayout3_4_1 .ipRespoBox3, .CFW_S_Idea[max-width~="720px"] .iPage_universal.respoLayout3_4_1 .ipRespoBox4,
+.page[max-width~="720px"].iPage_universal.respoLayout3_4_1.main_ipContainer1 .ipRespoBox1, .page[max-width~="720px"].iPage_universal.respoLayout3_4_1.main_ipContainer1 .ipRespoBox2,
+.page[max-width~="720px"].iPage_universal.respoLayout3_4_1.main_ipContainer1 .ipRespoBox3, .page[max-width~="720px"].iPage_universal.respoLayout3_4_1.main_ipContainer1 .ipRespoBox4,
+.CFW_S_Idea[max-width~="720px"] .iPage_universal.respoLayout3_4_1.main_ipContainer1 .ipRespoBox1, .CFW_S_Idea[max-width~="720px"] .iPage_universal.respoLayout3_4_1.main_ipContainer1 .ipRespoBox2,
+.CFW_S_Idea[max-width~="720px"] .iPage_universal.respoLayout3_4_1.main_ipContainer1 .ipRespoBox3, .CFW_S_Idea[max-width~="720px"] .iPage_universal.respoLayout3_4_1.main_ipContainer1 .ipRespoBox4,
+.page[max-width~="720px"].iPage_universal.respoLayout3_4_1.main_ipContainer2 .ipRespoBox1, .page[max-width~="720px"].iPage_universal.respoLayout3_4_1.main_ipContainer2 .ipRespoBox2,
+.page[max-width~="720px"].iPage_universal.respoLayout3_4_1.main_ipContainer2 .ipRespoBox3, .page[max-width~="720px"].iPage_universal.respoLayout3_4_1.main_ipContainer2 .ipRespoBox4,
+.CFW_S_Idea[max-width~="720px"] .iPage_universal.respoLayout3_4_1.main_ipContainer2 .ipRespoBox1, .CFW_S_Idea[max-width~="720px"] .iPage_universal.respoLayout3_4_1.main_ipContainer2 .ipRespoBox2,
+.CFW_S_Idea[max-width~="720px"] .iPage_universal.respoLayout3_4_1.main_ipContainer2 .ipRespoBox3, .CFW_S_Idea[max-width~="720px"] .iPage_universal.respoLayout3_4_1.main_ipContainer2 .ipRespoBox4 {
+	width: 100% !important;
+	order: 0;
+}
